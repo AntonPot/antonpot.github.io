@@ -1,0 +1,22 @@
+body {
+    background-color: black;   
+    margin-left: 300px;
+    font-family: cursive;
+    background-image: url("https://pbs.twimg.com/profile_images/478970119037546497/CFC-_kSg.png");
+    color: white;
+}
+
+.head {
+	font-family: Arial,sans-serif;
+	
+	font-weight: bold;
+}
+
+h1 {
+	margin-left: 100px;	 
+}
+
+section {
+	width: 600px;
+
+}
