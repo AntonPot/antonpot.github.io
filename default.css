@@ -1,0 +1,50 @@
+* {border: 1px solid black;}
+
+body {
+	color: white;
+	background-color: black;
+	font-family: 'Arvo', serif;
+
+}
+
+#header {
+    height: 201px;
+}
+
+#side_bar {
+	width: 200px;
+	height: 510px;
+	display: inline-block;
+	position: fixed;
+	color: black;
+}
+#main {
+	width:  900px;
+	display: inline;
+	margin-left: 200px;
+}
+.text_main {
+	text-align: right;
+	margin-bottom: 5px;
+	margin-top: 5px;	
+}
+h1 {
+	width: 700px;
+	font-size: 40px
+}
+h4 {
+	width: 1000px;
+}
+#footer {
+	margin-bottom: 0px;
+	margin-left: 660px;
+}
+
+/*
+#top_text_main {
+	width: 200px;
+}
+#bottom_text_main {
+	width: 200px;
+}
+*/
