@@ -1,5 +1,5 @@
-* {border: 1px solid black;}
-
+/* {border: 1px solid black;}
+*/
 body {
 	color: white;
 	background-color: black;
@@ -18,7 +18,7 @@ body {
 	position: fixed;
 	color: black;
 }
-#main {
+.main {
 	width:  900px;
 	display: inline;
 	margin-left: 200px;
@@ -39,12 +39,3 @@ h4 {
 	margin-bottom: 0px;
 	margin-left: 660px;
 }
-
-/*
-#top_text_main {
-	width: 200px;
-}
-#bottom_text_main {
-	width: 200px;
-}
-*/
