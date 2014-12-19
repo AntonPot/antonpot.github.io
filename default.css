@@ -1,27 +1,34 @@
-/* {border: 1px solid black;}
+/* {border: 1px solid white;}
 */
 body {
-	color: white;
+	color: rgb(255, 251, 175);
 	background-color: black;
 	font-family: 'Arvo', serif;
-
+	margin-top: 4%;
+	margin-left: 8%;
 }
-
 #header {
     height: 201px;
+    float: top;
 }
-
 #side_bar {
 	width: 200px;
-	height: 510px;
+	height: 500px;
 	display: inline-block;
-	position: fixed;
-	color: black;
+	float: left;
+}
+ul {
+	font-size: 15px;
 }
 .main {
-	width:  900px;
 	display: inline;
-	margin-left: 200px;
+}
+.blog_text {
+	margin-left: 230px;
+	width:  700px;
+}
+p {
+	color: white;
 }
 .text_main {
 	text-align: right;
@@ -30,12 +37,23 @@ body {
 }
 h1 {
 	width: 700px;
-	font-size: 40px
+	font-size: 40px;
+	
 }
 h4 {
 	width: 1000px;
 }
 #footer {
 	margin-bottom: 0px;
-	margin-left: 660px;
+	margin-left: 750px;
+}
+a:link {
+	color: rgb(255, 165, 89);
+}
+a:visited {
+	color: white;
+}
+a:hover {
+	font-weight: bold;
+	color: yellow;
 }
