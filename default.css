@@ -1,4 +1,5 @@
 body {
+	
 	color: rgb(255, 251, 175);
 	background-color: black;
 	font-family: 'Arvo', serif;
@@ -6,6 +7,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1120px;
+
 }
 #header {
     height: 201px;
@@ -18,17 +20,17 @@ body {
 	float: left;
 }
 ul {
-	font-size: 15px;
+	font-size: 14px;
 }
-.main {
+}
+#center_image {
+	
 	display: inline;
+
 }
 .blog_text {
 	margin-left: 230px;
 	width:  620px;
-}
-p {
-	color: white;
 }
 .text_main {
 	text-align: right;
@@ -36,8 +38,13 @@ p {
 	margin-top: 5px;	
 }
 h1 {
-	width: 700px;
+	position: absolute;
 	font-size: 40px;
+	text-align: center;
+	width: 230px;
+	
+	margin-top: -130px;
+	margin-left: 500px;
 	
 }
 h4 {
@@ -46,6 +53,7 @@ h4 {
 #footer {
 	margin-bottom: 0px;
 	margin-left: 740px;
+	clear: both;
 }
 a:link {
 	color: rgb(255, 165, 89);
