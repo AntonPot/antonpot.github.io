@@ -14,6 +14,7 @@ body {
     float: top;
 }
 #side_bar {
+	
 	width: 200px;
 	height: 500px;
 	display: inline-block;
@@ -22,11 +23,9 @@ body {
 ul {
 	font-size: 14px;
 }
-}
+
 #center_image {
 	
-	display: inline;
-
 }
 .blog_text {
 	margin-left: 230px;
