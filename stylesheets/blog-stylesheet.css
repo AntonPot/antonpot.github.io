@@ -5,7 +5,7 @@ body {
 	margin-top: 60px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1120px;
+	width: 1010px;
 }
 #header {
     height: 201px;
@@ -18,34 +18,18 @@ body {
 	float: left;
 }
 ul {
-	font-size: 15px;
+	font-size: 14px;
 }
 .main {
-	display: inline;
-}
-.blog_text {
 	margin-left: 230px;
 	width:  620px;
 }
 p {
-	color: white;
-}
-.text_main {
-	text-align: right;
-	margin-bottom: 5px;
-	margin-top: 5px;	
-}
-h1 {
-	width: 700px;
-	font-size: 40px;
-	
-}
-h4 {
-	width: 1000px;
+	color: white;	
 }
 #footer {
 	margin-bottom: 0px;
-	margin-left: 740px;
+	margin-left: 621px;
 }
 a:link {
 	color: rgb(255, 165, 89);

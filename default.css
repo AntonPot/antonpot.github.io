@@ -1,20 +1,18 @@
 body {
-	
 	color: rgb(255, 251, 175);
 	background-color: black;
 	font-family: 'Arvo', serif;
 	margin-top: 60px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1120px;
-
+	width: 1026px;
 }
 #header {
     height: 201px;
     float: top;
 }
 #side_bar {
-	
+	position: absolute;
 	width: 200px;
 	height: 500px;
 	display: inline-block;
@@ -26,6 +24,7 @@ ul {
 
 #center_image {
 	
+    margin-left: 23px;
 }
 .blog_text {
 	margin-left: 230px;
@@ -42,17 +41,15 @@ h1 {
 	text-align: center;
 	width: 230px;
 	
-	margin-top: -130px;
-	margin-left: 500px;
+	margin-top: -180px;
+	margin-left: 438px;
 	
 }
 h4 {
 	width: 1000px;
 }
 #footer {
-	margin-bottom: 0px;
-	margin-left: 740px;
-	clear: both;
+	margin-left: 650px;
 }
 a:link {
 	color: rgb(255, 165, 89);
