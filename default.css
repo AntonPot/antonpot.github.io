@@ -12,6 +12,7 @@ body {
     float: top;
     border-color: black;
     border-radius: 5%;
+    margin-left: 2px;
 }
 #side_bar {
 	position: absolute;
@@ -22,18 +23,25 @@ body {
 	position: absolute;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	width: 190px;
+	width: 194px;
 	border-width: 3px;
 	border-style: double;
 	border-color: rgb(255, 251, 175);
-	margin-top: 14px;
-	text-align: center;
 	border-radius: 13px;
+	margin-top: 14px;
+	margin-left: 1px;
+	text-align: center;
 	color: rgb(255, 251, 175);
 	background-color: rgb(60, 53, 16);
 }
 ol {
 	margin-top: 60px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-width: 3px;
+	border-style: double;
+	border-color: rgb(255, 251, 175);
+	border-radius: 13px;
 }
 ul {
 	font-size: 14px;
