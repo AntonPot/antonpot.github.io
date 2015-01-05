@@ -10,43 +10,49 @@ body {
 #header {
     height: 201px;
     float: top;
+    border-color: black;
+    border-radius: 5%;
 }
 #side_bar {
 	position: absolute;
-	width: 200px;
-	height: 500px;
-	display: inline-block;
+	width: 207px;
+	/* height: 344px; */
+	/* display: inline-block; */
 	float: left;
+}
+.button {
+	position: absolute;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 190px;
+	border-width: 3px;
+	border-style: double;
+	border-color: rgb(255, 251, 175);
+	margin-top: 14px;
+	text-align: center;
+	border-radius: 13px;
+	color: rgb(255, 251, 175);
+	background-color: rgb(60, 53, 16);
+}
+#aboutme {
+	margin-top: 60px;
+}
+ol {
+	margin-top: 60px;
 }
 ul {
 	font-size: 14px;
 }
-
 #center_image {
-	
     margin-left: 23px;
-}
-.blog_text {
-	margin-left: 230px;
-	width:  620px;
-}
-.text_main {
-	text-align: right;
-	margin-bottom: 5px;
-	margin-top: 5px;	
 }
 h1 {
 	position: absolute;
 	font-size: 40px;
 	text-align: center;
 	width: 230px;
-	
 	margin-top: -180px;
-	margin-left: 438px;
-	
-}
-h4 {
-	width: 1000px;
+	margin-left: 438px;	
 }
 #footer {
 	margin-left: 650px;
