@@ -16,8 +16,6 @@ body {
 #side_bar {
 	position: absolute;
 	width: 207px;
-	/* height: 344px; */
-	/* display: inline-block; */
 	float: left;
 }
 .button {
@@ -33,9 +31,6 @@ body {
 	border-radius: 13px;
 	color: rgb(255, 251, 175);
 	background-color: rgb(60, 53, 16);
-}
-#aboutme {
-	margin-top: 60px;
 }
 ol {
 	margin-top: 60px;

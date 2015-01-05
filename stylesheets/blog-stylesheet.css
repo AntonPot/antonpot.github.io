@@ -10,12 +10,30 @@ body {
 #header {
     height: 201px;
     float: top;
+    border-color: black;
+    border-radius: 5%;
 }
 #side_bar {
-	width: 200px;
-	height: 500px;
-	display: inline-block;
+	position: absolute;
+	width: 207px;
 	float: left;
+}
+.button {
+	position: absolute;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 190px;
+	border-width: 3px;
+	border-style: double;
+	border-color: rgb(255, 251, 175);
+	margin-top: 14px;
+	text-align: center;
+	border-radius: 13px;
+	color: rgb(255, 251, 175);
+	background-color: rgb(60, 53, 16);
+}
+ol {
+	margin-top: 60px;
 }
 ul {
 	font-size: 14px;
