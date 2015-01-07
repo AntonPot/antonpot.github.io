@@ -9,7 +9,8 @@ body {
 	margin-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1010px;
+	padding-bottom: 20px;
+	width: 1000px;
 	border-radius: 10px;
 }
 #header {
@@ -17,12 +18,14 @@ body {
     float: top;
     border-color: black;
     border-radius: 5%;
-    margin-left: 2px;
+    margin-left: 25px;
+    margin-top: 25px;
 }
 #side_bar {
 	position: absolute;
 	width: 207px;
 	float: left;
+	margin-left: 22px;
 }
 .button {
 	position: absolute;
@@ -52,7 +55,7 @@ ul {
 	font-size: 14px;
 }
 .main {
-	margin-left: 230px;
+	margin-left: 250px;
 	width:  620px;
 }
 p {
@@ -74,7 +77,7 @@ figcaption {
 	margin-left: 8px;
 }
 #footer {
-	margin-bottom: 0px;
+	/* margin-bottom: 0px; */
 	margin-left: 621px;
 }
 a:link {
