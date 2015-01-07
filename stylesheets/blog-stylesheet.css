@@ -1,11 +1,16 @@
 body {
+	background-image: url("../imgs/back-code-black.jpg");
+}
+#background {
 	color: rgb(255, 251, 175);
 	background-color: black;
 	font-family: 'Arvo', serif;
 	margin-top: 60px;
+	margin-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 1010px;
+	border-radius: 10px;
 }
 #header {
     height: 201px;
