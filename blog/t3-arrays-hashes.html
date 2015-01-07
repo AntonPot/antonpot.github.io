@@ -47,7 +47,7 @@
     <p>
       So let’s put this terms we established here into code. Cups can’t hover in mid-air so they need a table, which we create with command:
       <br><b>Array.new</b>
-      <br>The catch is, that this isn’t enough. Program wants us to name this array of ours, so we need to create a variable that we can name whatever we want, like line_of_cups for example. So the code that computer would except would be:
+      <br>The catch is, that this isn’t enough. Program wants us to name this array of ours, so we need to create a variable that we can name whatever we want, like <em>line_of_cups</em> for example. So the code that computer would except would be:
       <br><b>line_of_cups = Array.new</b>
       <br>One thing we need to know here is, that arrays in Ruby are very closely related to square brackets - []. What we have written here is actually an empty array. In fact writing
       <br><b>line_of_cups = Array.new</b>
@@ -56,7 +56,7 @@
       <br>We could write either of them and we’d get our platform. 
     </p>
     <p>
-       Until now we only put down a table for our cups. It’s time to add something to our array. The good thing is that we don’t need to put cups on a table, the computer does this for us. We only need to tell him what we want to put in them, and we want to put in them a number 123 (an <strong>integer</strong> in programming terminology), and “some words” (a <strong>string</strong> in programming terminology). Strings always need to be in “quotes” so the computer knows how long it is.
+       Until now we only put down a table for our cups. It’s time to add something to our array. The good thing is, that we don’t need to put cups on a table, the computer does this for us. We only need to tell him what we want to put in them, and we want to put in them a number <em>123</em> (an <strong>integer</strong> in programming terminology), and <em>“some words”</em> (a <strong>string</strong> in programming terminology). Strings always need to be in “quotes” so the computer knows how long it is.
     </p>
     <p>
       Adding to array is pretty straight forward. We tell to the computer which array and what to add. In our case this would be
@@ -65,7 +65,7 @@
       <br><b>line_of_cups << “some words”</b>
       <br>This gives us an array with two objects
       <br><b>[123, “some words”]</b>
-      <br>There is another way to push objects in our array. With this one we’ll add an integer 456, a string “more words” and another array that already has a cup with a string in it. We’ll do that with a command:
+      <br>There is another way to push objects in our array. With this one we’ll add an integer <em>456</em>, a string <em>“more words”</em> and another array that already has a string in it. We’ll do that with a command:
       <br><b>line_of_cups.push(456,”more words”,[“the new array”])</b>
       <br>If we were to test our array, it would now print
       <br><b>[123, “some words”, 456, "more words", ["the new array"]]</b>
@@ -93,7 +93,7 @@
       Arrays are very useful when we need to store some objects. We have seen before that arrays can hold other arrays as well. This are then called 2 dimensional arrays. But what if we don’t want to access the object in arrays with index numbers. What if we want to access them with some words we can make up ourselves? This is then the part when we need to return to the beginning of the blog post and remember that I was saying something about <strong>hashes</strong>, and they are exactly what we need in this case.
     </p>
     <p>
-      They are very similar to arrays but they have <strong>keys</strong> to access the <strong>value</strong>. There, I just said it. Hashes are made out of ‘key / value’ pairs. Just like arrays are best friends with square brackets - [], hashes are best friends with curly brackets - {}. Just like arrays we need to give our hash a name when we create one, for example:
+      They are very similar to arrays but they have <strong>keys</strong> to access the <strong>value</strong>. There, I just said it. Hashes are made out of <u>‘key / value’ pairs</u>. Just like arrays are best friends with square brackets - [], hashes are best friends with curly brackets - {}. Just like arrays we need to give our hash a name when we create one, for example:
       <br><b>whats_my_name = Hash.new</b>
       <br>Or like this:
       <br><b>whats_my_name = {}</b>

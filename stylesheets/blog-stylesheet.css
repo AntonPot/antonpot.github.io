@@ -44,8 +44,8 @@ body {
 }
 ol {
 	margin-top: 65px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	border-width: 3px;
 	border-style: double;
 	border-color: rgb(255, 251, 175);
@@ -53,6 +53,7 @@ ol {
 }
 ul {
 	font-size: 14px;
+	margin-left: -25px;
 }
 .main {
 	margin-left: 250px;
