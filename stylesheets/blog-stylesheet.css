@@ -53,6 +53,21 @@ ul {
 p {
 	color: white;	
 }
+b {
+	font-weight: normal;
+	font-family: courier, monaco, profont, snas-serif;
+	background-color: rgb(86, 86, 86);
+	color: rgb(255, 165, 89);
+}
+strong {
+	color: rgb(255, 251, 175);
+}
+figure {
+	margin-left: 0px;
+}
+figcaption {
+	margin-left: 8px;
+}
 #footer {
 	margin-bottom: 0px;
 	margin-left: 621px;
