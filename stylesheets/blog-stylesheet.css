@@ -1,4 +1,5 @@
 body {
+	background-color: black;
 	background-image: url("../imgs/back-code-black.jpg");
 }
 #background {
@@ -60,10 +61,7 @@ ul {
 	width:  620px;
 }
 .main > img {
-	
-    margin-left: auto;
-    
-    margin-right: auto;
+
 }
 p {
 	color: white;	

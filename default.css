@@ -21,14 +21,14 @@ body {
     float: top;
     border-color: black;
     border-radius: 5%;
-    margin-left: 17px;
+    margin-left: 25px;
     margin-top: 25px;
 }
 #side_bar {
 	position: absolute;
 	width: 207px;
 	float: left;
-	margin-left: 14px;
+	margin-left: 22px;
 }
 .button {
 	position: absolute;
