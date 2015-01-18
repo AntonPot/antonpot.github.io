@@ -64,6 +64,9 @@ ul {
 p {
 	color: white;	
 }
+.main > img {
+	width: 620px;
+}
 b {
 	font-weight: normal;
 	font-family: courier, monaco, profont, snas-serif;
