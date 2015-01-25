@@ -5,6 +5,7 @@
   <title>Enumerable Methods - #cycle</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>  
 </head>
 <body>
 <div id="background">
@@ -45,107 +46,120 @@
       I’ll be talking about cycle, and not just any kind of cycle, but a method called cycle. This one is kind of tricky because it can easily end up in a never ending loop. I’ll explain all about it later, but first let’s look at it and admire its beauty for a second.
     </p>
     <p>
-      #cycle
+      <strong>#cycle</strong>
     </p>
     <p>
       Yeah, I know! Looks awesome!
       <br>Now let’s look what it’s capable of:
     </p>
-    <p>
-      <br><b>>> array = [1,2,3,4]
-      <br>>> array.cycle{|x| puts x}</b>
-    </p>
+  <pre class="prettyprint">
+  <code>array = [1,2,3,4]
+  array.cycle{|x| puts x}</code></pre>
     <p>
       But wait! With this method, called as it is, you have to be really careful. It’s so powerful that it can count to infinity. Indeed. Some serious stuff going on here. It’s so powerful that it’s almost like Chuck Norris, just that he did it twice, so it’s not quite there yet.
     </p>
     <p>
       So this makes an infinite loop, but luckily we can give it some arguments which would stand for number of cycles it would do.
     </p>
-    <p>
-      <b>>> array = [1,2,3,4]
-      <br>>> array.cycle(2){|z| print z}
-      <br>12341234=> nil</b>
-    </p>
+  <pre class="prettyprint">
+  <code>array = [1,2,3,4]
+  array.cycle(2){|z| print z}</code></pre>
+      <p>Output:</p>
+      <p><b>=> 12341234</b></p>
     <p>
       Here we told it to make two cycles, so in fact we told it to make a bicycle. And it did! If you ever wondered how to make a bicycle, this is how to do it. As it turns out, it’s not that hard.
     </p>
     <p>
-      Next we’ll take a look how our friend works with method #next. Just so you know, #next gives you the following element. If you call it on integer 1, it would return you 2, just like if you call it on a string “a” it would give you “b”.
+      Next we’ll take a look how our friend works with method #next. Just so you know, #next gives you the following element. If you call it on integer 1, it would return you 2, just like if you call it on a string <code class="code">"a"</code> it would give you <code class="code">"b"</code>.
     </p>
     <p>
-      <b>>> 1.next
-      <br>=> 2
-      <br>>> "a".next
-      <br>=> "b"</b>
+  <pre class="prettyprint">
+  <code>1.next</code></pre>
+      <b>=> 2</b>
+  <pre class="prettyprint">
+  <code>"a".next</code></pre>
+      <b>=> "b"</b>
     </p>
      <p>
       And how can we use that with #cycle? If you have a variable pointing to an infinite loop it will always have a next item to return. Let’s see:
     </p>
     <p>
-      <b>> array = [1,2,3,4]
-      <br>=> [1, 2, 3, 4]
-      <br>>> my_loop = array.cycle
-      <br>>> my_loop.next
-      <br>=> 1
-      <br>>> my_loop.next
-      <br>=> 2
-      <br>>> my_loop.next
-      <br>=> 3
-      <br>>> my_loop.next
-      <br>=> 4
-      <br>>> my_loop.next
-      <br>=> 1
-      <br>>> my_loop.next
-      <br>=> 2</b>
+  <pre class="prettyprint">
+  <code>array = [1,2,3,4]
+  my_loop = array.cycle
+  my_loop.next</code></pre>
+     <b>=> 1</b>
+  <pre class="prettyprint">
+  <code>my_loop.next</code></pre>
+      <b>=> 2</b>
+  <pre class="prettyprint">
+  <code>my_loop.next</code></pre>
+      <b>=> 3</b>
+  <pre class="prettyprint">
+  <code>my_loop.next</code></pre>
+      <b>=> 4</b>
+  <pre class="prettyprint">
+  <code>my_loop.next</code></pre>
+      <b>=> 1</b>
+  <pre class="prettyprint">
+  <code>my_loop.next</code></pre>   
+      <b>=> 2</b>
     </p>
      <p>
       Pretty neat, right? Keep in mind that only works with #cycle. Let’s see what happens if we do the same with #each.
     </p>
     <p>
-      <b>>> array = [1,2,3,4]
-      <br>=> [1, 2, 3, 4]
-      <br>>> my_loop = array.each
-      <br>>> my_loop.next
-      <br>=> 1
-      <br>>> my_loop.next
-      <br>=> 2
-      <br>>> my_loop.next
-      <br>=> 3
-      <br>>> my_loop.next
-      <br>=> 4
-      <br>>> my_loop.next
-      <br>StopIteration: iteration reached an end
-            <br>from (irb):7:in `next'
-            <br>from (irb):7
-            <br>from C:/Ruby21-x64/bin/irb:11:in `&lt;main>'</b>
+  <pre class="prettyprint">
+  <code>array = [1,2,3,4]
+  my_loop = array.each
+  my_loop.next</code></pre>
+     <b>=> 1</b>
+  <pre class="prettyprint">
+  <code>my_loop.next</code></pre>
+      <b>=> 2</b>
+  <pre class="prettyprint">
+  <code>my_loop.next</code></pre>
+      <b>=> 3</b>
+  <pre class="prettyprint">
+  <code>my_loop.next</code></pre>
+      <b>=> 4</b>
+  <pre class="prettyprint">
+  <code>my_loop.next</code></pre>
+      <b>=> StopIteration: iteration reached an end</b><br>
+      <b>from (irb):7:in `next'</b><br>
+      <b>from (irb):7</b><br>
+      <b>from C:/Ruby21-x64/bin/irb:11:in `&lt;main>'</b>
     </p>
      <p>
-      See, we get an error! This is because #each is not Chuck Norris and it has a limit to where it can count.
+      See? We get an error! This is because #each is not Chuck Norris and it has a limit to where it can count.
     </p>
     <p>
-      There’s one more thing I’d want to point out. One might think that creating a variable (my_loop in our case) is pointless, because you can just call #next to array.cycle like so…
+      There’s one more thing I’d want to point out. One might think that creating a variable (my_loop in our case) is pointless, because you can just call #next to <code class="code">array.cycle</code> like so…
     </p>
     <p>
-      <b>array.cycle.next</b>
+  <pre class="prettyprint">
+  <code>array.cycle.next</code></pre>
     </p>
     <p>
       … and he’d be wrong. Let’s try it, just for the heck of it.
     </p>
     <p>
-      <b>>> array = [1,2,3,4]
-      <br>=> [1, 2, 3, 4]
-      <br>>> array.cycle.next
-      <br>=> 1
-      <br>>> array.cycle.next
-      <br>=> 1
-      <br>>> array.cycle.next
-      <br>=> 1</b>
+  <pre class="prettyprint">
+  <code>array = [1,2,3,4]
+      array.cycle.next</code></pre>
+      <b>=> 1</b>
+  <pre class="prettyprint">
+  <code>array.cycle.next</code></pre>
+      <b>=> 1</b>
+  <pre class="prettyprint">
+  <code>array.cycle.next</code></pre>
+      <b>=> 1</b>
     </p>
     <p>
       Well, this looks more like #same than #next to me! And just that we are clear, #same is not a method, at least not one that I would know of.
     </p>
     <p>
-      Why this is #next doesn’t work is beyond of scope of this post, so let’s just except it and create a variable and we can all live happily ever after.
+      Why this doesn’t work with #next is beyond of scope of this post, so let’s just except it and create a variable, and we can all live happily ever after.
     </p>
   </div>
   <div id="footer">

@@ -97,7 +97,7 @@
       <br>Now we have an object <strong>obj</strong> which is an instance of Car class (meaning it plays by the rules written in class Car), and since we said <code class="code">puts "Let’s see some mean machines"</code> the output of the code will be:
     </p>
     <p>
-      <b>Let’s see some mean machines</b>
+      <b>=> Let’s see some mean machines</b>
     </p>
     <p>
       But this is not what we are after. We need to make some cars! If we look at our variables defined at the beginning, we see all of our cars have engine and 4 wheels. That means we could put this information in initialize method, because it will always be the same with all the cars.
@@ -131,8 +131,8 @@
       And our output is:
     </p>
     <p>
-      <b>Is engine in the car? => true</b><br>
-      <b>How many wheels does it have? => 4</b>
+      <b>=> Is engine in the car? => true</b><br>
+      <b>=> How many wheels does it have? => 4</b>
     </p>
     <p>
       Yeey!!! We’re doing great!
@@ -166,7 +166,7 @@
       And we get an error:
     </p>
     <p>
-      <b>test.rb:15: syntax error, unexpected end-of-input</b><br>
+      <b>=> test.rb:15: syntax error, unexpected end-of-input</b><br>
       <b>obj.color=</b><br>
       <b style = 'padding-left: 96px'>^</b>
     </p>
@@ -196,9 +196,9 @@
       And the output is exactly what we want:
     </p>
     <p>
-      <b>Is engine in the car? => true</b><br>
-      <b>How many wheels does it have? => 4</b><br>
-      <b>What is the colour? => blue</b>
+      <b>=> Is engine in the car? => true</b><br>
+      <b>=> How many wheels does it have? => 4</b><br>
+      <b>=> What is the colour? => blue</b>
     </p>
     <p>
       But we want to change the colour, not have it hardcoded like here. We need to put the colour in when we call the method. First we need to change our method in the class so it will take some arguments like ‘colour_argument’ and then we’ll assign the value when we’ll call it.   
@@ -223,9 +223,9 @@
       Output:
     </p>
     <p>
-      <b>Is engine in the car? => true</b><br>
-      <b>How many wheels does it have? => 4</b><br>
-      <b>What is the colour? => blue</b>
+      <b>=> Is engine in the car? => true</b><br>
+      <b>=> How many wheels does it have? => 4</b><br>
+      <b>=> What is the colour? => blue</b>
     </p>
     <p>
       Great! We got the same output as before, but we defined the colour when calling the method.
@@ -252,9 +252,9 @@
       Output:
     </p>
     <p>
-      <b>Is engine in the car? => true</b><br>
-      <b>How many wheels does it have? => 4</b><br>
-      <b>What is the colour? => blue</b><br>
+      <b>=> Is engine in the car? => true</b><br>
+      <b>=> How many wheels does it have? => 4</b><br>
+      <b>=> What is the colour? => blue</b><br>
     </p>
     <p>
       Alright!!!
@@ -282,16 +282,17 @@
       We didn’t call it <code class ="code">display=</code> because it doesn’t take any arguments, so it has to be called just <code class ="code">display</code>. Now we need to add another method call to our <code class ="code">obj</code> because we got a new method. Here we go:
     </p>
     <p>
-      <b>obj = Car.new</b><br>
-      <b>obj.colour = 'blue'</b><br>
-      <b>obj.display</b><br>
+  <pre class="prettyprint">
+  <code>obj = Car.new
+  obj.colour = 'blue'
+  obj.display</code></pre>
     </p>
     <p>
       Output:
     </p>
     <p>
-      <b>./blogclass.rb:10:in `display': undefined local variable or</b><br>
-      <b>method `engine' for #&lt;Car:0x00000002c344a0> (NameError)</b><br>
+      <b>=> ./blogclass.rb:10:in `display': undefined local variable</b><br>
+      <b>or method `engine' for #&lt;Car:0x00000002c344a0> (NameError)</b><br>
       <b>from ./blogclass.rb:18:in `&lt;main>'</b>
     </p>
     <p>
@@ -323,9 +324,9 @@
       Output:
     </p>
     <p>
-      <b>Is engine in the car? => true</b><br>
-      <b>How many wheels does it have? => 4</b><br>
-      <b>What is the colour? => blue</b><br>
+      <b>=> Is engine in the car? => true</b><br>
+      <b>=> How many wheels does it have? => 4</b><br>
+      <b>=> What is the colour? => blue</b><br>
     </p>
     <p>
       YESSSSS!!! We rock!
@@ -402,11 +403,11 @@
       Output:
     </p>
     <p>
-      <b>"Audi"</b><br>
-      <b>"A4"</b><br>
-      <b>Is engine in the car? => true</b><br>
-      <b>How many wheels does it have? => 4</b><br>
-      <b>What is the colour? => blue</b><br>
+      <b>=> "Audi"</b><br>
+      <b>=> "A4"</b><br>
+      <b>=> Is engine in the car? => true</b><br>
+      <b>=> How many wheels does it have? => 4</b><br>
+      <b>=> What is the colour? => blue</b><br>
     </p>
     <p>
       Pay attention to the fact that we could easily name the new methods which return the value <code class ="code">make</code> because the other one, which gathers value is called <code class ="code">make=</code>. Look as well at the test code, at the bottom where we call it. We added the <code class ="code">p</code> so it prints the output. It’s easier like that then to change the code in the class. 
@@ -468,11 +469,11 @@
       Output: 
     </p>
     <p>
-      <b>"Audi"</b><br>
-      <b>"A4"</b><br>
-      <b>Is engine in the car? => true</b><br>
-      <b>How many wheels does it have? => 4</b><br>
-      <b>What is the colour? => blue</b>
+      <b>=> "Audi"</b><br>
+      <b>=> "A4"</b><br>
+      <b>=> Is engine in the car? => true</b><br>
+      <b>=> How many wheels does it have? => 4</b><br>
+      <b>=> What is the colour? => blue</b>
     </p>
     <p>
       See? It works! And it’s so much shorter to write. All you have to do is to add a symbol (it’s name starting with ‘:’) so the computer knows how to name it.
@@ -516,11 +517,11 @@
       Output:
     </p>
     <p>
-      <b>"Audi"</b><br>
-      <b>"A4"</b><br>
-      <b>Is engine in the car? => true</b><br>
-      <b>How many wheels does it have? => 4</b><br>
-      <b>What is the colour? => blue</b>
+      <b>=> "Audi"</b><br>
+      <b>=> "A4"</b><br>
+      <b>=> Is engine in the car? => true</b><br>
+      <b>=> How many wheels does it have? => 4</b><br>
+      <b>=> What is the colour? => blue</b>
     </p>
     <p>
     Ahh. It’s getting easier and easier to breath here. Let’s finish with the last one, <strong>attr_accessor</strong>. For the previous two the name is very clear, and so is for this one. It combines both of the previous shortcuts into one super cool one. This means it does both reads and writes in one simple line. Let’s do it to model, get rid of both methods, and use <code class="code">attr_accessor :model</code> instead.
@@ -555,11 +556,11 @@
       Output:
     </p>
     <p>
-      <b>"Audi"</b><br>
-      <b>"A4"</b><br>
-      <b>Is engine in the car? => true</b><br>
-      <b>How many wheels does it have? => 4</b><br>
-      <b>What is the colour? => blue</b>     
+      <b>=> "Audi"</b><br>
+      <b>=> "A4"</b><br>
+      <b>=> Is engine in the car? => true</b><br>
+      <b>=> How many wheels does it have? => 4</b><br>
+      <b>=> What is the colour? => blue</b>     
     </p>
     <p>
       And this is how it’s done! 
@@ -590,11 +591,13 @@
   car1.make = 'Audi'
   car1.model = 'A4'
   car1.display
+  puts
   car2 = Car.new
   car2.colour = 'black'
   car2.make = 'VW'
   car2.model = 'Passat'
   car2.display
+  puts
   car3 = Car.new
   car3.colour = 'red'
   car3.make = 'Ford'
@@ -604,21 +607,23 @@
       Output:
     </p> 
     <p>
-      <b>Is engine in the car? => true</b><br>
-      <b>How many wheels does it have? => 4</b><br>
-      <b>What is the colour? blue</b><br>
-      <b>Which brand is it? => Audi</b><br>
-      <b>And what model? => A4</b><br>
-      <b>Is engine in the car? => true</b><br>
-      <b>How many wheels does it have? => 4</b><br>
-      <b>What is the colour? black</b><br>
-      <b>Which brand is it? => VW</b><br>
-      <b>And what model? => Passat</b><br>
-      <b>Is engine in the car? => true</b><br>
-      <b>How many wheels does it have? => 4</b><br>
-      <b>What is the colour? red</b><br>
-      <b>Which brand is it? => Ford</b><br>
-      <b>And what model? => Mustang</b>
+      <b>=> Is engine in the car? => true</b><br>
+      <b>=> How many wheels does it have? => 4</b><br>
+      <b>=> What is the colour? blue</b><br>
+      <b>=> Which brand is it? => Audi</b><br>
+      <b>=> And what model? => A4</b><br>
+      <b>=> </b><br>
+      <b>=> Is engine in the car? => true</b><br>
+      <b>=> How many wheels does it have? => 4</b><br>
+      <b>=> What is the colour? black</b><br>
+      <b>=> Which brand is it? => VW</b><br>
+      <b>=> And what model? => Passat</b><br>
+      <b>=> </b><br>
+      <b>=> Is engine in the car? => true</b><br>
+      <b>=> How many wheels does it have? => 4</b><br>
+      <b>=> What is the colour? red</b><br>
+      <b>=> Which brand is it? => Ford</b><br>
+      <b>=> And what model? => Mustang</b>
     </p>
     <p>
       Now imagine you have this class in another file, and you just type the color, make and model, and it will print the whole car, just like that. Almost like magic.
