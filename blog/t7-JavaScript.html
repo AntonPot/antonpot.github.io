@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <title>Loops in JavaScript & Ruby</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+</head>
+<body>
+<div id="background">
+    <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
+  <table id="side_bar">
+    <tr><td class="button"><a href="../index.html">Home</a></td></tr>
+    <tr><td id="menu"><ol>
+            <li>Week</li>
+              <ul>
+                <li><a href="./t1-git-blog.html">       Shell &amp; Friends</a></li>
+                <li><a href="./c1-chefs-kitchen.html">  School vs. Club</a></li>
+              </ul>
+            <li>Week</li>
+              <ul>
+                <li><a href="./t2-css-design.html">     HTMS/CSS &amp; Cinema</a></li>
+              </ul>
+            <li>Week</li>
+              <ul>
+                <li><a href="./t3-arrays-hashes.html">  How Arrays Work</a></li>
+                <li><a href="./c3-thinking-style.html"> Thinking styles</a></li>
+              </ul>
+            <li>Week</li>
+              <ul>
+                <li><a href="./t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+                <li><a href="./c4-tech-issues.html">    Issues in Tech - Complexity</a></li>
+              </ul>            
+            <li>Week</li>
+              <ul>
+                <li><a href="./t5-ruby-classes.html">   Why Classes?</li>
+                <li><a href="./c5-feedback.html">       Feedback</a></li>
+              </ul>
+            <li>Week</li>
+              <ul>
+                <li><a href="./t6-oop-concepts.html">   Inheritance, Composition, Mixins</a></li>
+                <li><a href="./c6-stereotype-threat.html">Stereotype thread</a></li>
+              </ul>
+            <li>Week</li>
+              <ul>
+                <li>Title 1</li>
+                <li>Title 2</li>
+              </ul>
+    </ol></td></tr>
+  </table>
+<div class="main">
+  <h2>Loops in JavaScript & Ruby</h2>
+  <h2></h2>
+  <h3>February the 5th in year 2015</h3>
+    <p>
+      JavaScript is a funny language, if you ask me. Maybe because we have only done things with Ruby here at Dev Bootcamp, and approaching new language is always weird. I don’t know. But what I have seen in this short time of using JavaScript, is a feeling that it is much more complicated than Ruby. I do not know enough to really judge it, but I just go by my gut feeling. I’ll compare the two today, and we’ll see the differences in loops between both languages.
+    </p>
+    <p>
+      <strong>While</strong> loop:
+    </p>
+    <p>
+      In JavaScript:
+    </p>
+    <pre class="prettyprint">
+  <code>var x = 0;
+  while (x < 9){
+    console.log(x)
+    ++x
+  }</code></pre>
+    <p>
+      In Ruby:
+    </p>
+    <pre class="prettyprint">
+  <code>x = 0
+  while x < 9
+    puts x
+    x += 1
+  end</code></pre>
+    <p>
+      Output is the same for both:
+    </p>
+    <p>
+      <b>0</b><br>
+      <b>1</b><br>
+      <b>2</b><br>
+      <b>3</b><br>
+      <b>4</b><br>
+      <b>5</b><br>
+      <b>6</b><br>
+      <b>7</b><br>
+      <b>8</b>
+    </p>
+    <p>
+      Here we can see that both are fairly similar. JavaScript uses curly brackets, which are easy to miss, but in ruby you can’t use a really cool counter like in JS. As well, one uses <code class="code">puts</code>, other <code class="code">console.log()</code>, but apart from that, they are very close.
+    </p>
+    <p>
+      <strong>Do - While</strong> loop:
+    </p>
+    <p>
+      What if we want to execute the code at least once, even though the condition fails. There’s a very good way of doing that in JavaScript, but if we want to do the same thing in Ruby, we need to get a bit creative, and use an 'if statement' to break out of the loop.
+    </p>
+    <p>
+      In JavaScript:
+    </p>
+    <pre class="prettyprint">
+  <code>var x = 0;
+  do {
+    console.log(x);
+    ++x
+  } while (x < 1)</code></pre>
+    <p>
+      In Ruby:
+    </p>
+  <pre class="prettyprint">
+  <code>x = 0
+  loop do
+    puts x
+    x += 1
+  break if x >= 1
+  end</code></pre>
+    <p>
+      Output is the same for both:
+    </p>
+    <p>
+      <b>0</b>
+    </p>
+    <p>
+      This means that it executes the code once and than it exits the loop. We can see the main difference between this two is the condition we set at the end. This is what computer looks at when it wo,nders if he needs to continue. In case of JavaScript, we set it to <code class="code">false</code> ( <code class="code">x < 1</code> ), and in case of Ruby it’s the other way around. We set it to <code class="code">true</code> ( <code class="code">x >= 1</code> ).
+    </p>
+    <p>
+      There’s one more.
+    </p>
+    <p>
+      <strong>For</strong> loop:
+    </p>
+    <p>
+      When writing in JavaScript text editors will often offered you a shortcut for this loop. In Sublime Text  3, the editor I use, you only need to type <code class="code">for</code> and computer will offer you the option to write the loop for you. The one integrated in Sublime is made for arrays, but you can always modify it as you wish. Let’s see what our two languages offer us for <code class="code">for</code>:
+    </p>
+    <p>
+      In JavaScript:
+    </p>
+    <pre class="prettyprint">
+  <code>for (var i = 0; i < 9; i++) {
+    console.log(i)
+  }</code></pre>
+    <p>
+      In Ruby:
+    </p>
+  <pre class="prettyprint">
+  <code>for i in 0..8
+    puts i
+  end</code></pre>
+    <p>
+      Output is the same for both:
+    </p>
+    <p>
+      <b>0</b><br>
+      <b>1</b><br>
+      <b>2</b><br>
+      <b>3</b><br>
+      <b>4</b><br>
+      <b>5</b><br>
+      <b>6</b><br>
+      <b>7</b><br>
+      <b>8</b>
+    </p>
+    <p>
+      JS has a loop with counter. A very similar thing we did with ‘while’ loop example. We set up to what number we want it to count, and it will. Once condition is <code class="code">false</code>, loop breaks. Very similar thing happens with Ruby, just that a lot of it happens ‘under the hood’. Here <code class="code">i</code> will take the role of number in range we just set. Like in our case from 0 to 8. But we could easily replace the range (0..8) with an array. I’ll add a second example for Ruby's <code class="code">for</code>. This time with an array of strings.
+    </p>
+  <pre class="prettyprint">
+  <code>array = ["a","b","c","d","e","f","g","h"]
+  for i in array
+    puts i
+  end</code></pre>
+    <p>
+      Output:
+    </p>
+    <p>
+      <b>a</b><br>
+      <b>b</b><br>
+      <b>c</b><br>
+      <b>d</b><br>
+      <b>e</b><br>
+      <b>f</b><br>
+      <b>g</b><br>
+      <b>h</b>
+    </p>
+    <p>
+      It's a very useful loop when dealing with arrays, for a simple fact that it always has the index number for you. In our examples we could use <code class="code">i</code> as an index, and we’d be able to pick up, delete, switch, increase, or do whatever we want to the element that would pass our hypothetical 'if statement'.
+    </p>
+  </div>
+  <div id="footer">
+    <table>
+      <tr><td colspan="3">by Marko Anton Potocnik</td></tr>
+      <tr><td>You can find me in...</td>
+          <td><a href="mailto:markoapotocnik@gmail.com"><img src="../imgs/mail-icon.png"></a></td>
+          <td><a href="https://www.facebook.com/markoapotocnik"><img src="../imgs/facebook.png"></a></td>
+          <td><a href="https://twitter.com/mapotocnik"><img src="../imgs/twitter.png"></a></td>
+          <td><a href="http://si.linkedin.com/in/markoapotocnik"><img src="../imgs/linkedin.png"></a></td>
+          <td><a href="https://github.com/AntonPot"><img style="background-color: white" src="../imgs/github.png"></a></td></tr>
+    </table>  
+  </div>
+</div>
+</body>
+</html>
