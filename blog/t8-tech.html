@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <title>Static vs. Dynamic typing</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+<body>
+<div id="background">
+    <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
+  <table id="side_bar">
+    <tr><td class="button"><a href="../index.html">Home</a></td></tr>
+    <tr><td id="menu"><ol>
+            <li>Week</li>
+              <ul>
+                <li><a href="./t1-git-blog.html">       Shell &amp; Friends</a></li>
+                <li><a href="./c1-chefs-kitchen.html">  School vs. Club</a></li>
+              </ul>
+            <li>Week</li>
+              <ul>
+                <li><a href="./t2-css-design.html">     HTMS/CSS &amp; Cinema</a></li>
+              </ul>
+            <li>Week</li>
+              <ul>
+                <li><a href="./t3-arrays-hashes.html">  How Arrays Work</a></li>
+                <li><a href="./c3-thinking-style.html"> Thinking styles</a></li>
+              </ul>
+            <li>Week</li>
+              <ul>
+                <li><a href="./t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+                <li><a href="./c4-tech-issues.html">    Issues in Tech - Complexity</a></li>
+              </ul>            
+            <li>Week</li>
+              <ul>
+                <li><a href="./t5-ruby-classes.html">   Why Classes?</li>
+                <li><a href="./c5-feedback.html">       Feedback</a></li>
+              </ul>
+            <li>Week</li>
+              <ul>
+                <li><a href="./t6-oop-concepts.html">   Inheritance, Composition, Mixins</a></li>
+                <li><a href="./c6-stereotype-threat.html">Stereotype thread</a></li>
+              </ul>
+            <li>Week</li>
+              <ul>
+                <li><a href="./t7-JavaScript.html">     Loops in JS &amp; Ruby</a></li>
+                <li><a href="./c7-values.html">         My Values</a></li>
+              </ul>
+            <li>Week</li>
+              <ul>
+                <li><a href="./t8-tech.html">           Static vs. Dynamic typing</a></li>
+                <li><a href="./c8-conflict.html">       Conflict</a></li>
+              </ul>
+    </ol></td></tr>
+  </table>
+<div class="main">
+  <h2>Static vs. Dynamic typing</h2>
+  <h2></h2>
+  <h3>February the 11th in year 2015</h3>
+    <p>
+      I made a bit of research about the languages of today, and as it turns out they have something called type system. This type system has something called type checking. And it’s the type checking I’ll be talking about today.
+    </p>
+    <p>
+      There are two ways:
+    </p>
+    <p>
+      <strong>Static type checking</strong><br>
+      and<br>
+      <strong>Dynamic type checking</strong><br>
+    </p>
+    <p>
+      There seems to be a battle out there in the programming community revolving around which one is best. I have travelled around the internet to find a definitive answer, but all I found was, that there is none. I could have ended just here, but than I would feel all my research would go to waist. I don’t want that, so I’ll try my best to describe each one of them to you.
+    </p>
+    <p>
+       Let’s start with <strong>Static Typing</strong>.
+    </p>
+    <p>
+      When working with these languages we usually don't type the programmes in a regular text editor. Well, you can, but why would you when you have something really cool called IDE! It stands for Integrated Development Environment. A short list of the most popular IDEs at the moment:
+    </p>
+    <ul>
+      <li><a href="http://codelite.org/">CodeLite</a></li>
+      <li><a href="https://netbeans.org/">NetBeans</a></li>
+      <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+      <li><a href="http://www.codeblocks.org/">Code::Blocks</a></li>
+      <li><a href="http://www.visualstudio.com/get-started/overview-of-get-started-tasks-vs">Microsoft Visual studio</a></li>
+    </ul>
+    <p>
+      But why would one use this environments instead of a regular text editor? IDEs offer something really awesome. When you write the code it will automatically suggest all the methods you can call on this object. This is called ‘intelligent code completion’, or as it is commonly known as IntelliSense, a term picked up from Visual Studio’s name for it. And this is where we came to the main difference between the two.
+    </p>
+    <p>
+      When running static type language code, it will first go to the compiler and after he does his magic, which means translate it to some more basic language, that computer understands, it will then be sent to runtime and displayed on your screen. This means it will have fewer errors by the time it reaches runtime, as compiler will check it first. IDEs usually have the compiler already integrated in them, but it’s important to know that they are not the same thing.
+    </p>
+    <p>
+      Static does have some drawbacks though. It’s much harder to reuse code, and it takes longer to compile.
+    </p>
+    <p>
+      Famous languages representing static typing:
+    </p>
+    <ul>
+      <li><a href="http://en.wikipedia.org/wiki/C%2B%2B">C++</a></li>
+      <li><a href="http://en.wikipedia.org/wiki/C_(programming_language)">C</a></li>
+      <li><a href="http://en.wikipedia.org/wiki/Java_(programming_language)">Java</a></li>
+      <li><a href="http://en.wikipedia.org/wiki/Scala_(programming_language)">Scala</a></li>
+    </ul>
+    <p>
+       And now let’s focus on what we at DBC are more familiar with. <strong>Dynamic Typing</strong>.
+    </p>
+    <p>
+      As we know we don’t have IDEs when writing in Ruby, because it is a dynamic typing language, and we use normal text editor. There are plenty to choose from, and I’ll mention just a few which seem to be popular with coders:
+    </p>
+    <ul>
+      <li><a href="http://notepad-plus-plus.org/download/v6.7.4.html">Notepad ++</a></li>
+      <li><a href="http://jedit.org/index.php?page=download">jEdit</a></li>
+      <li><a href="http://www.scintilla.org/SciTEDownload.html">SciTE</a></li>
+      <li><a href="http://www.vim.org/download.php">Vim</a></li>
+      <li><a href="http://www.sublimetext.com">Sublime Text</a></li>
+    </ul>
+    <p>
+      By now we already know that IDE is not the same as a text editor, as text editor doesn’t compile, and it doesn’t provide us with IntelliSense, but there is as tool for ruby that comes close to it. It’s called <a href="http://www.rubymine.com">RubyMine</a>. It’s not prefect but it brings the experience closer to the opposition. Just so you know, this is not the only tool like that for dynamic typing. What RubyMine provides for Ruby, Visual Studio provides for JavaScript. 
+    </p>
+    <p>
+      With static typing this is easy, because IDE just asks the compiler what are the options. Why is it than so hard with dynamic typing? Where is the compiler? Does dynamic typing even need compiling? Of course it does! Computer can’t read Ruby code directly! So if it needs compiling, when does it happen then? Here’s the big difference again. It happens at runtime. This two processes are combined into one. That’s why we get the error messages when we run the code, while if you’d try the IDE you’d get all the fancy display of the errors in messages and in the code. 
+    </p>
+    <p>
+      We need to mention that despite not having ability of compiling pre runtime, dynamic typing is faster, has more reusable code, and programmer has more control, while the downside is that output is not guaranteed and you as a programmer have more responsibility.
+    </p>
+    <p>
+      At the end, I’ll put down some of the most famous languages representing dynamic typing:
+    </p>
+    <ul>
+      <li><a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+      <li><a href="http://en.wikipedia.org/wiki/Perl">Perl</a></li>
+      <li><a href="http://en.wikipedia.org/wiki/PHP">PHP</a></li>
+      <li><a href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a></li>
+      <li><a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a></li>
+    </ul>
+    <p>
+      I hope I got things a bit clearer on the subject. If not, there’s a whole internet worth of a pages on the subject. Good luck :)
+    </p>
+  </div>
+  <div id="footer">
+    <table>
+      <tr><td colspan="3">by Marko Anton Potocnik</td></tr>
+      <tr><td>You can find me in...</td>
+          <td><a href="mailto:markoapotocnik@gmail.com"><img src="../imgs/mail-icon.png"></a></td>
+          <td><a href="https://www.facebook.com/markoapotocnik"><img src="../imgs/facebook.png"></a></td>
+          <td><a href="https://twitter.com/mapotocnik"><img src="../imgs/twitter.png"></a></td>
+          <td><a href="http://si.linkedin.com/in/markoapotocnik"><img src="../imgs/linkedin.png"></a></td>
+          <td><a href="https://github.com/AntonPot"><img style="background-color: white" src="../imgs/github.png"></a></td></tr>
+    </table>  
+  </div>
+</div>
+</body>
+</html>
