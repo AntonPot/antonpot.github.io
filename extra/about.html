@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html>
   <head>
   	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
   	<title>Marko's Homepage</title>
-  	<link rel="stylesheet" type="text/css" href="./default.css">
-      <link href="./css/bootstrap.css" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/about.css">
+      <link href="../css/bootstrap.css" rel="stylesheet">
   </head>
   <body role="document">
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -21,51 +22,51 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="./extra/about.html">About Me</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="#about">About Me</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Technical Blog<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">Week 1</li>          
-                <li><a href="./blog/t1-git-blog.html">Shell &amp; Friends</a></li>
+                <li><a href="../blog/t1-git-blog.html">Shell &amp; Friends</a></li>
                 <li class="dropdown-header">Week 2</li>          
-                <li><a href="./blog/t2-css-design.html">HTMS/CSS &amp; Cinema</a></li>
+                <li><a href="../blog/t2-css-design.html">HTMS/CSS &amp; Cinema</a></li>
                 <li class="dropdown-header">Week 3</li>            
-                <li><a href="./blog/t3-arrays-hashes.html">How Arrays Work</a></li>
+                <li><a href="../blog/t3-arrays-hashes.html">How Arrays Work</a></li>
                 <li class="dropdown-header">Week 4</li>          
-                <li><a href="./blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+                <li><a href="../blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
                 <li class="dropdown-header">Week 5</li>          
-                <li><a href="./blog/t5-ruby-classes.html">Why Classes?</a></li>
+                <li><a href="../blog/t5-ruby-classes.html">Why Classes?</a></li>
                 <li class="dropdown-header">Week 6</li>          
-                <li><a href="./blog/t6-oop-concepts.html">Inheritance, Composition, Mixins</a></li>
+                <li><a href="../blog/t6-oop-concepts.html">Inheritance, Composition, Mixins</a></li>
                 <li class="dropdown-header">Week 7</li>          
-                <li><a href="./blog/t7-JavaScript.html">Loops in JS &amp; Ruby</a></li>
+                <li><a href="../blog/t7-JavaScript.html">Loops in JS &amp; Ruby</a></li>
                 <li class="dropdown-header">Week 8</li>          
-                <li><a href="./blog/t8-tech.html">Static vs. Dynamic typing</a></li>
+                <li><a href="../blog/t8-tech.html">Static vs. Dynamic typing</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Pairing projects</li>
-                <li><a href="./extra/javascript_prototypes.html">JavaScript Prototypes</a></li>
+                <li><a href="../extra/javascript_prototypes.html">JavaScript Prototypes</a></li>
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cultural Blog<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">Week 1</li>          
-                <li><a href="./blog/c1-chefs-kitchen.html">School vs. Club</a></li>
+                <li><a href="../blog/c1-chefs-kitchen.html">School vs. Club</a></li>
                 <li class="dropdown-header">Week 3</li>          
-                <li><a href="./blog/c3-thinking-style.html">Thinking styles</a></li>
+                <li><a href="../blog/c3-thinking-style.html">Thinking styles</a></li>
                 <li class="dropdown-header">Week 4</li>          
-                <li><a href="./blog/c4-tech-issues.html">Issues in Tech - Complexity</a></li>
+                <li><a href="../blog/c4-tech-issues.html">Issues in Tech - Complexity</a></li>
                 <li class="dropdown-header">Week 5</li>          
-                <li><a href="./blog/c5-feedback.html">Feedback</a></li>
+                <li><a href="../blog/c5-feedback.html">Feedback</a></li>
                 <li class="dropdown-header">Week 6</li>          
-                <li><a href="./blog/c6-stereotype-threat.html">Stereotype thread</a></li>
+                <li><a href="../blog/c6-stereotype-threat.html">Stereotype thread</a></li>
                 <li class="dropdown-header">Week 7</li>          
-                <li><a href="./blog/c7-values.html">My Values</a></li>
+                <li><a href="../blog/c7-values.html">My Values</a></li>
                 <li class="dropdown-header">Week 8</li>          
-                <li><a href="./blog/c8-conflict.html">Conflict</a></li>
+                <li><a href="../blog/c8-conflict.html">Conflict</a></li>
                 <li class="dropdown-header">Week 9</li>          
-                <li><a href="./blog/c9-questions.html">Questions</a></li>
+                <li><a href="../blog/c9-questions.html">Questions</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -87,15 +88,24 @@
       </div>
     </nav>
     <div id="index_background">
-      <img id="header" src="./imgs/avatar.png" alt="Picture of myself">
-      <div>
-      	<img id="center_image" src="./imgs/eclipse.jpg" alt="Eclipse seen from space">
+      <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
+      <div id="my_text_area">
+        <h2 class="yellow_header">About my blog...</h2>
+        <h2 class="yellow_header"></h2>
+        <h4 class="yellow_header">...and about the "fella with them shades"</h3>
+          <p>
+            I'm a student of DevBoot Camp and Junior Programmer. The blog you are reading is the result of my preparation for DBC. I'm writing about my development as a programmer and as a person. There are two types of blogs, technical and cultural, and each one of them relates to one of the topics.
+          </p>
+          <p>
+            I was given a subject to write about each week for whole nine weeks of my remote study, and that means two blogs per week. You can find them all in my navigation bar at the top of the page.
+          </p>
+          <p>
+            I'm glad you stopped by to check out my product. I hope you'll enjoy reading about it and you might even find some information that will come useful the future.
+          </p>
+        <h5 class="yellow_header" style="float:right">...by Marko Anton Potocnik</h4>
       </div>
-      
-      <h5 id="wtmb">Welcome to My DevBootcamp Blog</h5>
-      <h1 id="lcdb">Learn Code Dream Big</h1>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>

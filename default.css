@@ -1,15 +1,3 @@
-/*
-body {
-	background-color: black;
-}
-
-#backgournd_image {
-	background-image: url("./imgs/eclipse-big.jpg");
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-*/
 #index_background {
 	color: rgb(255, 251, 175);
 	font-family: 'Arvo', serif;
@@ -27,67 +15,23 @@ body {
     margin-left: 25px;
     margin-top: 25px;
 }
-/*
-#side_bar {
-	position: absolute;
-	width: 207px;
-	float: left;
-	margin-left: 22px;
-}
-.button {
-	position: absolute;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 190px;
-	border-width: 3px;
-	border-style: double;
-	border-color: rgb(255, 251, 175);
-	border-radius: 13px;
-	margin-top: 14px;
-	margin-left: 1px;
-	text-align: center;
-	color: rgb(255, 251, 175);
-	background-color: rgb(60, 53, 16);
-}
-*/
-/*
-ol {
-	margin-top: 65px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	border-width: 3px;
-	border-style: double;
-	border-color: rgb(255, 251, 175);
-	border-radius: 13px;
-}
-ul {
-	font-size: 14px;
-	margin-left: -25px;
-}
-*/
 #center_image {
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
-h1 {
-	position: absolute;
+#lcdb {
+	/* position: absolute; */
 	font-size: 40px;
 	text-align: center;
 	width: 230px;
 	margin-top: -180px;
-	margin-left: 438px;	
+	/* margin-left: 438px; */	
+	margin-left: auto;
+	margin-right: auto;
 }
-#footer {
-	margin-left: 647px;
+#wtmb {
+	/* margin-left: 647px; */
+	margin-left: auto;
+	margin-right: auto;
+	/* position: absolute; */
+	text-align: center;
 }
-a:link {
-	color: rgb(255, 165, 89);
-}
-a:visited {
-	color: white;
-}
-a:hover {
-	font-weight: bold;
-	color: yellow;
-}
-
-/* {border: 1px solid white;}
