@@ -4,59 +4,127 @@
 	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 	<title>Marko's Homepage</title>
 	<link rel="stylesheet" type="text/css" href="default.css">
+    <link href="./css/bootstrap.css" rel="stylesheet">
 </head>
-<body>
+<body role="document">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Marko A Potocnik's Blog</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Technical Blog<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-header">Week 1</li>          
+            <li><a href="./blog/t1-git-blog.html">Shell &amp; Friends</a></li>
+            <li class="dropdown-header">Week 2</li>          
+            <li><a href="./blog/t2-css-design.html">HTMS/CSS &amp; Cinema</a></li>
+            <li class="dropdown-header">Week 3</li>            
+            <li><a href="./blog/t3-arrays-hashes.html">How Arrays Work</a></li>
+            <li class="dropdown-header">Week 4</li>          
+            <li><a href="./blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+            <li class="dropdown-header">Week 5</li>          
+            <li><a href="./blog/t5-ruby-classes.html">Why Classes?</a></li>
+            <li class="dropdown-header">Week 6</li>          
+            <li><a href="./blog/t6-oop-concepts.html">Inheritance, Composition, Mixins</a></li>
+            <li class="dropdown-header">Week 7</li>          
+            <li><a href="./blog/t7-JavaScript.html">Loops in JS &amp; Ruby</a></li>
+            <li class="dropdown-header">Week 8</li>          
+            <li><a href="./blog/t8-tech.html">Static vs. Dynamic typing</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Pairing projects</li>
+            <li><a href="./extra/javascript_prototypes.html">JavaScript Prototypes</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cultural Blog<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-header">Week 1</li>          
+            <li><a href="./blog/c1-chefs-kitchen.html">School vs. Club</a></li>
+            <li class="dropdown-header">Week 3</li>          
+            <li><a href="./blog/c3-thinking-style.html">Thinking styles</a></li>
+            <li class="dropdown-header">Week 4</li>          
+            <li><a href="./blog/c4-tech-issues.html">Issues in Tech - Complexity</a></li>
+            <li class="dropdown-header">Week 5</li>          
+            <li><a href="./blog/c5-feedback.html">Feedback</a></li>
+            <li class="dropdown-header">Week 6</li>          
+            <li><a href="./blog/c6-stereotype-threat.html">Stereotype thread</a></li>
+            <li class="dropdown-header">Week 7</li>          
+            <li><a href="./blog/c7-values.html">My Values</a></li>
+            <li class="dropdown-header">Week 8</li>          
+            <li><a href="./blog/c8-conflict.html">Conflict</a></li>
+            <li class="dropdown-header">Week 9</li>          
+            <li><a href="./blog/c9-questions.html">Questions</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
 <div id="index_background">
   <img id="header" src="./imgs/avatar.png" alt="Picture of myself">
+  <!--
   <table id="side_bar">
   	<tr><td class="button">My DBC Blog</td></tr>
     <tr><td><ol>
             <li>Week</li>
               <ul>
-                <li><a href="./blog/t1-git-blog.html">       Shell &amp; Friends</a></li>
-                <li><a href="./blog/c1-chefs-kitchen.html">  School vs. Club</a></li>
+                <li><a href="">       </a></li>
+                <li><a href="">  </a></li>
               </ul>
             <li>Week</li>
               <ul>
-                <li><a href="./blog/t2-css-design.html">     HTMS/CSS &amp; Cinema</a></li>
+                <li><a href="">     </a></li>
               </ul>
             <li>Week</li>
               <ul>
-                <li><a href="./blog/t3-arrays-hashes.html">  How Arrays Work</a></li>
-                <li><a href="./blog/c3-thinking-style.html"> Thinking styles</a></li>
+                <li><a href="">  </a></li>
+                <li><a href=""> </a></li>
               </ul>
             <li>Week</li>
               <ul>
-                <li><a href="./blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
-                <li><a href="./blog/c4-tech-issues.html">    Issues in Tech - Complexity</a></li>
+                <li><a href=""></a></li>
+                <li><a href="">    </a></li>
               </ul>            
             <li>Week</li>
               <ul>
-                <li><a href="./blog/t5-ruby-classes.html">   Why Classes?</li>
-                <li><a href="./blog/c5-feedback.html">       Feedback</a></li>
+                <li><a href="">   </li>
+                <li><a href="">       </a></li>
               </ul>         
             <li>Week</li>
               <ul>
-                <li><a href="./blog/t6-oop-concepts.html">   Inheritance, Composition, Mixins</a></li>
-                <li><a href="./blog/c6-stereotype-threat.html">Stereotype thread</a></li>
+                <li><a href="">   </a></li>
+                <li><a href=""></a></li>
               </ul>
             <li>Week</li>
               <ul>
-                <li><a href="./blog/t7-JavaScript.html">     Loops in JS &amp; Ruby</a></li>
-                <li><a href="./blog/c7-values.html">         My Values</a></li>
+                <li><a href="">     </a></li>
+                <li><a href="">         </a></li>
               </ul>  
             <li>Week</li>
               <ul>
-                <li><a href="./blog/t8-tech.html">           Static vs. Dynamic typing</a></li>
-                <li><a href="./blog/c8-conflict.html">       Conflict</a></li>
+                <li><a href="">           </a></li>
+                <li><a href="">       </a></li>
               </ul>
             <li>Week</li>
               <ul>
-                <li><a href="./blog/c9-questions.html">           Questions</a></li>
+                <li><a href="">           </a></li>
               </ul>                                        
     </ol></td></tr>
-    <tr><td class="button"><a href="./extra/javascript_prototypes.html">JavaScript Prototypes</a></td></tr>
+    <tr><td class="button"><a href=""></a></td></tr>
   </table>
+  -->
   <div>
   	<img id="center_image" src="./imgs/eclipse.jpg" alt="Eclipse seen from space">
   </div>
@@ -73,5 +141,7 @@
     </table> 	
   </div>
 </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
