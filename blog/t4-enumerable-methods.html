@@ -1,82 +1,113 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-  <title>Enumerable Methods - #cycle</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>  
-</head>
-<body>
-<div id="background">
-    <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
-  <table id="side_bar">
-    <tr><td class="button"><a href="../index.html">Home</a></td></tr>
-    <tr><td id="menu"><ol>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t1-git-blog.html">       Shell &amp; Friends</a></li>
-                <li><a href="./c1-chefs-kitchen.html">  School vs. Club</a></li>
+  <head>
+  	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  	<title>template</title>
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/new_blog-stylesheet.css">
+      <link href="../css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <p class="navbar-text" >Marko Anton Potocnik</p>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../extra/about.html">About Me</a></li>
+            <li class="active" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Technical Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/t1-git-blog.html">Shell &amp; Friends</a></li>
+                <li class="dropdown-header">Week 2</li>          
+                <li><a href="../blog/t2-css-design.html">HTMS/CSS &amp; Cinema</a></li>
+                <li class="dropdown-header">Week 3</li>            
+                <li><a href="../blog/t3-arrays-hashes.html">How Arrays Work</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/t5-ruby-classes.html">Why Classes?</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/t6-oop-concepts.html">Inheritance, Composition, Mixins</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/t7-JavaScript.html">Loops in JS &amp; Ruby</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/t8-tech.html">Static vs. Dynamic typing</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Pairing projects</li>
+                <li><a href="../extra/javascript_prototypes.html">JavaScript Prototypes</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t2-css-design.html">     HTMS/CSS &amp; Cinema</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cultural Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/c1-chefs-kitchen.html">School vs. Club</a></li>
+                <li class="dropdown-header">Week 3</li>          
+                <li><a href="../blog/c3-thinking-style.html">Thinking styles</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/c4-tech-issues.html">Issues in Tech - Complexity</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/c5-feedback.html">Feedback</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/c6-stereotype-threat.html">Stereotype thread</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/c7-values.html">My Values</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/c8-conflict.html">Conflict</a></li>
+                <li class="dropdown-header">Week 9</li>          
+                <li><a href="../blog/c9-questions.html">Questions</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t3-arrays-hashes.html">  How Arrays Work</a></li>
-                <li><a href="./c3-thinking-style.html"> Thinking styles</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Me<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu"> 
+                <li><a href="mailto:markoapotocnik@gmail.com">Email</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://www.facebook.com/markoapotocnik">Facebook</a></li>
+                <li class="divider"></li>
+                <li><a href="https://twitter.com/mapotocnik">Twitter</a></li>
+                <li class="divider"></li>  
+                <li><a href="http://si.linkedin.com/in/markoapotocnik">LinkedIn</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://github.com/AntonPot">GitHub</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
-                <li><a href="./c4-tech-issues.html">    Issues in Tech - Complexity</a></li>
-              </ul>            
-            <li>Week</li>
-              <ul>
-                <li><a href="./t5-ruby-classes.html">   Why Classes?</li>
-                <li><a href="./c5-feedback.html">       Feedback</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t6-oop-concepts.html">   Inheritance, Composition, Mixins</a></li>
-                <li><a href="./c6-stereotype-threat.html">Stereotype thread</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t7-JavaScript.html">     Loops in JS &amp; Ruby</a></li>
-                <li><a href="./c7-values.html">         My Values</a></li>
-              </ul>        
-            <li>Week</li>
-              <ul>
-                <li><a href="./t8-tech.html">           Static vs. Dynamic typing</a></li>
-                <li><a href="./c8-conflict.html">       Conflict</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./c9-questions.html">      Questions</a></li>
-              </ul>                                  
-    </ol></td></tr>
-  </table>
-<div class="main">
-  <h2>Enumerable Methods:</h2>
-  <h2>#cycle</h2>
-  <h3>January the 15th in year 2015</h3>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="index_background">
+      <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
+      <div id="my_text_area">
+        <h2 class="yellow_header">Enumerable Methods:</h2>
+        <h2 class="yellow_header">#cycle</h2>
+        <h4 class="yellow_header">January the 15th in year 2015</h3>
     <p>
-      I’ll be talking about cycle, and not just any kind of cycle, but a method called cycle. This one is kind of tricky because it can easily end up in a never ending loop. I’ll explain all about it later, but first let’s look at it and admire its beauty for a second.
+      I'll be talking about cycle, and not just any kind of cycle, but a method called cycle. This one is kind of tricky because it can easily end up in a never ending loop. I'll explain all about it later, but first let's look at it and admire its beauty for a second.
     </p>
     <p>
-      <strong>#cycle</strong>
+      <strong class="yellow_header">#cycle</strong>
     </p>
     <p>
       Yeah, I know! Looks awesome!
-      <br>Now let’s look what it’s capable of:
+      <br>Now let's look what it's capable of:
     </p>
   <pre class="prettyprint">
   <code>array = [1,2,3,4]
   array.cycle{|x| puts x}</code></pre>
     <p>
-      But wait! With this method, called as it is, you have to be really careful. It’s so powerful that it can count to infinity. Indeed. Some serious stuff going on here. It’s so powerful that it’s almost like Chuck Norris, just that he did it twice, so it’s not quite there yet.
+      But wait! With this method, called as it is, you have to be really careful. It's so powerful that it can count to infinity. Indeed. Some serious stuff going on here. It's so powerful that it's almost like Chuck Norris, just that he did it twice, so it's not quite there yet.
     </p>
     <p>
       So this makes an infinite loop, but luckily we can give it some arguments which would stand for number of cycles it would do.
@@ -84,115 +115,120 @@
   <pre class="prettyprint">
   <code>array = [1,2,3,4]
   array.cycle(2){|z| print z}</code></pre>
-      <p>Output:</p>
-      <p><b>=> 12341234</b></p>
+    <p>Output:</p>
+    <output class='my_output'>=> 12341234</output>
+    <p></p>
     <p>
-      Here we told it to make two cycles, so in fact we told it to make a bicycle. And it did! If you ever wondered how to make a bicycle, this is how to do it. As it turns out, it’s not that hard.
+      Here we told it to make two cycles, so in fact we told it to make a bicycle. And it did! If you ever wondered how to make a bicycle, this is how to do it. As it turns out, it's not that hard.
     </p>
     <p>
-      Next we’ll take a look how our friend works with method #next. Just so you know, #next gives you the following element. If you call it on integer 1, it would return you 2, just like if you call it on a string <code class="code">"a"</code> it would give you <code class="code">"b"</code>.
+      Next we'll take a look how our friend works with method #next. Just so you know, #next gives you the following element. If you call it on integer 1, it would return you 2, just like if you call it on a string <code class="code">"a"</code> it would give you <code class="code">"b"</code>.
     </p>
     <p>
   <pre class="prettyprint">
   <code>1.next</code></pre>
-      <b>=> 2</b>
+    <output class='my_output'>=> 2</output>
+    <p></p>
   <pre class="prettyprint">
   <code>"a".next</code></pre>
-      <b>=> "b"</b>
-    </p>
-     <p>
-      And how can we use that with #cycle? If you have a variable pointing to an infinite loop it will always have a next item to return. Let’s see:
+      <output class='my_output'>=> "b"</output>
     </p>
     <p>
+      And how can we use that with #cycle? If you have a variable pointing to an infinite loop it will always have a next item to return. Let's see:
+    </p>
   <pre class="prettyprint">
   <code>array = [1,2,3,4]
   my_loop = array.cycle
   my_loop.next</code></pre>
-     <b>=> 1</b>
+    <output class='my_output'>=> 1</output>
+    <p></p>
   <pre class="prettyprint">
   <code>my_loop.next</code></pre>
-      <b>=> 2</b>
+    <output class='my_output'>=> 2</output>
+    <p></p>
   <pre class="prettyprint">
   <code>my_loop.next</code></pre>
-      <b>=> 3</b>
+    <output class='my_output'>=> 3</output>
+    <p></p>
   <pre class="prettyprint">
   <code>my_loop.next</code></pre>
-      <b>=> 4</b>
+    <output class='my_output'>=> 4</output>
+    <p></p>
   <pre class="prettyprint">
   <code>my_loop.next</code></pre>
-      <b>=> 1</b>
+    <output class='my_output'>=> 1</output>
+    <p></p>
   <pre class="prettyprint">
   <code>my_loop.next</code></pre>   
-      <b>=> 2</b>
-    </p>
+    <output class='my_output'>=> 2</output>
+    <p></p>
      <p>
-      Pretty neat, right? Keep in mind that only works with #cycle. Let’s see what happens if we do the same with #each.
+      Pretty neat, right? Keep in mind that only works with #cycle. Let's see what happens if we do the same with #each.
     </p>
     <p>
   <pre class="prettyprint">
   <code>array = [1,2,3,4]
   my_loop = array.each
   my_loop.next</code></pre>
-     <b>=> 1</b>
+    <output class='my_output'>=> 1</output>
+    <p></p>
   <pre class="prettyprint">
   <code>my_loop.next</code></pre>
-      <b>=> 2</b>
+    <output class='my_output'>=> 2</output>
+    <p></p>
   <pre class="prettyprint">
   <code>my_loop.next</code></pre>
-      <b>=> 3</b>
+    <output class='my_output'>=> 3</output>
+    <p></p>
   <pre class="prettyprint">
   <code>my_loop.next</code></pre>
-      <b>=> 4</b>
+    <output class='my_output'>=> 4</output>
+    <p></p>
   <pre class="prettyprint">
   <code>my_loop.next</code></pre>
-      <b>=> StopIteration: iteration reached an end</b><br>
-      <b>from (irb):7:in `next'</b><br>
-      <b>from (irb):7</b><br>
-      <b>from C:/Ruby21-x64/bin/irb:11:in `&lt;main>'</b>
+      <output class='my_output'>=> StopIteration: iteration reached an end<br>
+      from (irb):7:in 'next'<br>
+      from (irb):7<br>
+      from C:/Ruby21-x64/bin/irb:11:in `&lt;main>'</output>
     </p>
      <p>
       See? We get an error! This is because #each is not Chuck Norris and it has a limit to where it can count.
     </p>
     <p>
-      There’s one more thing I’d want to point out. One might think that creating a variable (my_loop in our case) is pointless, because you can just call #next to <code class="code">array.cycle</code> like so…
+      There's one more thing I'd want to point out. One might think that creating a variable (my_loop in our case) is pointless, because you can just call #next to <code class="code">array.cycle</code> like so...
     </p>
     <p>
   <pre class="prettyprint">
   <code>array.cycle.next</code></pre>
     </p>
     <p>
-      … and he’d be wrong. Let’s try it, just for the heck of it.
+      ... and he'd be wrong. Let's try it, just for the heck of it.
     </p>
     <p>
   <pre class="prettyprint">
   <code>array = [1,2,3,4]
       array.cycle.next</code></pre>
-      <b>=> 1</b>
+    <output class='my_output'>=> 1</output>
+    <p></p>
   <pre class="prettyprint">
   <code>array.cycle.next</code></pre>
-      <b>=> 1</b>
+    <output class='my_output'>=> 1</output>
+    <p></p>
   <pre class="prettyprint">
   <code>array.cycle.next</code></pre>
-      <b>=> 1</b>
+    <output class='my_output'>=> 1</output>
+    <p></p>
     </p>
     <p>
       Well, this looks more like #same than #next to me! And just that we are clear, #same is not a method, at least not one that I would know of.
     </p>
     <p>
-      Why this doesn’t work with #next is beyond of scope of this post, so let’s just except it and create a variable, and we can all live happily ever after.
+      Why this doesn't work with #next is beyond of scope of this post, so let's just except it and create a variable, and we can all live happily ever after.
     </p>
-  </div>
-  <div id="footer">
-    <table>
-      <tr><td colspan="3">by Marko Anton Potocnik</td></tr>
-      <tr><td>You can find me in...</td>
-          <td><a href="mailto:markoapotocnik@gmail.com"><img src="../imgs/mail-icon.png"></a></td>
-          <td><a href="https://www.facebook.com/markoapotocnik"><img src="../imgs/facebook.png"></a></td>
-          <td><a href="https://twitter.com/mapotocnik"><img src="../imgs/twitter.png"></a></td>
-          <td><a href="http://si.linkedin.com/in/markoapotocnik"><img src="../imgs/linkedin.png"></a></td>
-          <td><a href="https://github.com/AntonPot"><img style="background-color: white" src="../imgs/github.png"></a></td></tr>
-    </table>  
-  </div>
-</div>
-</body>
+        <h5 class="yellow_header" style="float:right">...by Marko Anton Potocnik</h4>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
 </html>

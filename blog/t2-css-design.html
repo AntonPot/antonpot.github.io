@@ -1,116 +1,141 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-  <title>HTML and CSS run the Cinema</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-</head>
-<body>
-<div id="background">
-    <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
-  <table id="side_bar">
-    <tr><td class="button"><a href="../index.html">Home</a></td></tr>
-    <tr><td id="menu"><ol>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t1-git-blog.html">       Shell &amp; Friends</a></li>
-                <li><a href="./c1-chefs-kitchen.html">  School vs. Club</a></li>
+  <head>
+  	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  	<title>HTML and CSS run the Cinema</title>
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/new_blog-stylesheet.css">
+      <link href="../css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <p class="navbar-text" >Marko Anton Potocnik</p>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../extra/about.html">About Me</a></li>
+            <li class="active" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Technical Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/t1-git-blog.html">Shell &amp; Friends</a></li>
+                <li class="dropdown-header">Week 2</li>          
+                <li><a href="../blog/t2-css-design.html">HTMS/CSS &amp; Cinema</a></li>
+                <li class="dropdown-header">Week 3</li>            
+                <li><a href="../blog/t3-arrays-hashes.html">How Arrays Work</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/t5-ruby-classes.html">Why Classes?</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/t6-oop-concepts.html">Inheritance, Composition, Mixins</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/t7-JavaScript.html">Loops in JS &amp; Ruby</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/t8-tech.html">Static vs. Dynamic typing</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Pairing projects</li>
+                <li><a href="../extra/javascript_prototypes.html">JavaScript Prototypes</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t2-css-design.html">     HTMS/CSS &amp; Cinema</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cultural Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/c1-chefs-kitchen.html">School vs. Club</a></li>
+                <li class="dropdown-header">Week 3</li>          
+                <li><a href="../blog/c3-thinking-style.html">Thinking styles</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/c4-tech-issues.html">Issues in Tech - Complexity</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/c5-feedback.html">Feedback</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/c6-stereotype-threat.html">Stereotype thread</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/c7-values.html">My Values</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/c8-conflict.html">Conflict</a></li>
+                <li class="dropdown-header">Week 9</li>          
+                <li><a href="../blog/c9-questions.html">Questions</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t3-arrays-hashes.html">  How Arrays Work</a></li>
-                <li><a href="./c3-thinking-style.html"> Thinking styles</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Me<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu"> 
+                <li><a href="mailto:markoapotocnik@gmail.com">Email</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://www.facebook.com/markoapotocnik">Facebook</a></li>
+                <li class="divider"></li>
+                <li><a href="https://twitter.com/mapotocnik">Twitter</a></li>
+                <li class="divider"></li>  
+                <li><a href="http://si.linkedin.com/in/markoapotocnik">LinkedIn</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://github.com/AntonPot">GitHub</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
-                <li><a href="./c4-tech-issues.html">    Issues in Tech - Complexity</a></li>
-              </ul>            
-            <li>Week</li>
-              <ul>
-                <li><a href="./t5-ruby-classes.html">   Why Classes?</li>
-                <li><a href="./c5-feedback.html">       Feedback</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t6-oop-concepts.html">   Inheritance, Composition, Mixins</a></li>
-                <li><a href="./c6-stereotype-threat.html">Stereotype thread</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t7-JavaScript.html">     Loops in JS &amp; Ruby</a></li>
-                <li><a href="./c7-values.html">         My Values</a></li>
-              </ul>     
-            <li>Week</li>
-              <ul>
-                <li><a href="./t8-tech.html">           Static vs. Dynamic typing</a></li>
-                <li><a href="./c8-conflict.html">       Conflict</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./c9-questions.html">      Questions</a></li>
-              </ul>                                   
-    </ol></td></tr>
-  </table>
-<div class="main">
-  <h2>HTML and CSS run the Cinema</h2>
-  <h3>December the 19th in year 2014</h3>
-    <p>
-      I’ve had an interesting week thus far, and it’s only Friday. Weekend is still up for grabs, but I won’t go into that. I want to discuss my newly gained skills of web page development. Yes, you heard it right! I’ve made my own page! I know, you can’t believe it, right? Well, as a matter of fact you probably can, because you’re reading a blog on it. But whatever, I’m super excited!
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="index_background">
+      <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
+      <div id="my_text_area">
+        <h2 class="yellow_header">HTML and CSS run the Cinema</h2>
+        <h4 class="yellow_header">December the 19th in year 2014</h3>
+          <p>
+            I've had an interesting week thus far, and it's only Friday. Weekend is still up for grabs, but I won't go into that. I want to discuss my newly gained skills of web page development. Yes, you heard it right! I've made my own page! I know, you can't believe it, right? Well, as a matter of fact you probably can, because you're reading a blog on it. But whatever, I'm super excited!
 
-    </p>
-    <p>
-      There’s a lot of things one has to know about web page development, but it’s important to picture yourself the structure of it. So, what is it made of? Every web page is made from many different rectangles, all different sizes and sitting next to or on top of each other. For better understanding how this is, go back in time and try to remember a game that mostly every kid plays, that is “lets build a pile”. A game where one kid is lying on the floor, and all the other kids lie on top of him to build a pile. At the end you only see his head, because is the most important thing. The same is with elements of the web pages. You build a pile, put one on top of another, and just let out the part that is important for the page. The only difference is that web page elements don’t need to breathe, so they don’t complain, and you can leave them like that forever. 
-    </p>
-    <p><img src="../imgs/kids_pile.jpg" alt="Kids jumping on top of each other"></p>
-    <p>This ↑ is obviously the same as this ↓</p>
-    <p><img src="../imgs/html_pile.jpg" alt="3D structure of facebook page"></p>
-    <p>
-      Now that you understand how “let’s build a pile” works, let me tell you how “let’s sit next to each other works”. It’s like in the cinema. Everybody sits next to each other, and together they make the theater full. The same principle goes for the web page. You need a lot of elements to fill it up, and make it do things.
+          </p>
+          <p>
+            There's a lot of things one has to know about web page development, but it's important to picture yourself the structure of it. So, what is it made of? Every web page is made from many different rectangles, all different sizes and sitting next to or on top of each other. For better understanding how this is, go back in time and try to remember a game that mostly every kid plays, that is "lets build a pile". A game where one kid is lying on the floor, and all the other kids lie on top of him to build a pile. At the end you only see his head, because is the most important thing. The same is with elements of the web pages. You build a pile, put one on top of another, and just let out the part that is important for the page. The only difference is that web page elements don't need to breathe, so they don't complain, and you can leave them like that forever. 
+          </p>
+          <p><img src="../imgs/kids_pile.jpg" alt="Kids jumping on top of each other"></p>
+          <p>This is obviously the same...</p>
+          <p><img src="../imgs/html_pile.jpg" alt="3D structure of facebook page"></p>
+          <p>... as this.</p>
+          <p>
+            Now that you understand how "let's build a pile" works, let me tell you how "let's sit next to each other works". It's like in the cinema. Everybody sits next to each other, and together they make the theater full. The same principle goes for the web page. You need a lot of elements to fill it up, and make it do things.
 
-    </p>
-    <p>
-     Next we need to know is how to tell the elements what they are saying. Typically they are saying some text, so we’ll stick to that. To do that, we need something called <strong>HyperText Markup Language</strong>. It usually goes by its initials - <strong>HTML</strong>. Here’s an example:
-    </p>
-    <p><img src="../imgs/i_am_html.png" alt="Code of a very simple HTML page"></p>
-    <p>
-       Pretty basic page but you can see the elements and that they are always between <em style="color: rgb(255, 251, 175)">&lt;something&gt;</em> and <em style="color: rgb(255, 251, 175)">&lt;/something&gt;</em>. This “something” things are called tags. And what is between the tags is what the element is saying. In this case a dwarfish introduction. By the way, this are actually his real parents, because even in HTML world something has to come from something else. But even though that our elements can say things, they can only stay in one line. Like in a theatre. If HTMLs would go there, the first one to go in would sit in first row, chair one and won’t let anybody sit next to him, no matter what he is saying. Second one would sit in second row, chair one and so on, until only the far edge of the cinema would be filled to the last row. You can’t run a movie theatre like that. You need some rules.
-    </p>
-    <p>
-      Hello <strong>CSS</strong> or <strong>Cascading Style Sheets</strong>. He is the guy who tells everybody where to sit, what to dress, what they can eat, where they can play “let’s build a pile” so that the movie they are about to see is going to be really happy with all of them.
-    </p>
-    <p><img src="../imgs/css_rules.jpg" alt="A mug saying 'CSS rules!'"></p>
-    <p>
-      In more technical terms it gives HTML elements shape, colors, positions and so on. To build a proper web page you need both of this guys and they need to understand each other, so they can work together. If you want this to happen, you need to write the CSS code exactly right to the letter, or they won’t understand it. If even one letter is false, it would be just like you would be speaking Slovenian with them. And I can guarantee you that they don’t understand that.
-      One of the most important features every HTML element has and is managed by CSS are it’s borders. Well one would think, “What’s so special about borders? It’s just a line that divides.” Well technically that is true, but who’s to say what kind of line is it going to be? Black? Blue? Dotted? Curved edges? Think of it as clothes a HTML element wears when going to the movies, and CSS says what the dress code is. 
-    </p>
-    <p><img src="../imgs/i_am_css.png"><strong>p</strong> is HTML and CSS tells him how to behave</p>
-    <p>
-      We humans are really lucky because we are all very similar. When we go to the movies, every chair more or less suits us. We’re all pretty much the same size, same shape and everybody is pretty much one shade of brown. Except this one guy that I seen on youtube that is blue. But he is the exception that confirms the rule. HTML elements aren’t so lucky. They come in so many different sizes, shapes, colors that we humans don’t even come close, they go crazy with each one of this properties, so for them going to the movies is much much harder. One main difference in their theatre is that they can move their chairs. This allows CSS to move them around in every way it wants. There’s one cool property that CSS can give to the elements, and is very important when HTML elements are being sited. It’s their aura. Yes, I know! CSS has some serious power. By the way, he tends to call aura - a margin. I don’t know why. It’s not even half as cool as aura, but he’s the boss. Margins of elements can’t cross each other, so he has to put this into account when they are sited. Luckily he can adjust the margin, and they are sited the way he wants.
-    </p>
-    <p>
-      <iframe width="640" height="360" src="http://www.youtube.com/embed/LowTUTGOtE0" frameborder="0" allowfullscreen ></iframe>
-    </p>
-    <p>
-      One last thing about we need to mention, before we’re done for today. When HTML elements go to the movies they usually wear T-shirts with something written on it. It’s they themselves who decide what it’s going to say. This is something that CSS with all it’s powers can’t affect. But CSS does have the power of controlling where on the T-shirt it’s going to be written. To adjust the text on the page to his wish he uses something called padding. He says how much space needs to be added from the edge of the T-shirt on the top, right, bottom or left to the text on it, and it is so placed exactly to the pixel, or px for short. Obviously CSS also decides what color, font type/family the text is going to be, in addition to what color the shirt is. But remember, it’s the HTML elements that decide what they’ll say. At the end of the day, they do live in a free country.
-    </p>
+          </p>
+          <p>
+           Next we need to know is how to tell the elements what they are saying. Typically they are saying some text, so we'll stick to that. To do that, we need something called <strong>HyperText Markup Language</strong>. It usually goes by its initials - <strong>HTML</strong>. Here's an example:
+          </p>
+          <p><img src="../imgs/i_am_html.png" alt="Code of a very simple HTML page"></p>
+          <p>
+             Pretty basic page but you can see the elements and that they are always between <em style="color: rgb(255, 251, 175)">&lt;something&gt;</em> and <em style="color: rgb(255, 251, 175)">&lt;/something&gt;</em>. This "something" things are called tags. And what is between the tags is what the element is saying. In this case a dwarfish introduction. By the way, this are actually his real parents, because even in HTML world something has to come from something else. But even though that our elements can say things, they can only stay in one line. Like in a theatre. If HTMLs would go there, the first one to go in would sit in first row, chair one and won't let anybody sit next to him, no matter what he is saying. Second one would sit in second row, chair one and so on, until only the far edge of the cinema would be filled to the last row. You can't run a movie theatre like that. You need some rules.
+          </p>
+          <p>
+            Hello <strong>CSS</strong> or <strong>Cascading Style Sheets</strong>. He is the guy who tells everybody where to sit, what to dress, what they can eat, where they can play "let's build a pile" so that the movie they are about to see is going to be really happy with all of them.
+          </p>
+          <p><img src="../imgs/css_rules.jpg" alt="A mug saying 'CSS rules!'"></p>
+          <p>
+            In more technical terms it gives HTML elements shape, colors, positions and so on. To build a proper web page you need both of this guys and they need to understand each other, so they can work together. If you want this to happen, you need to write the CSS code exactly right to the letter, or they won't understand it. If even one letter is false, it would be just like you would be speaking Slovenian with them. And I can guarantee you that they don't understand that.
+            One of the most important features every HTML element has and is managed by CSS are it's borders. Well one would think, "What's so special about borders? It's just a line that divides." Well technically that is true, but who's to say what kind of line is it going to be? Black? Blue? Dotted? Curved edges? Think of it as clothes a HTML element wears when going to the movies, and CSS says what the dress code is. 
+          </p>
+          <p><img src="../imgs/i_am_css.png"><strong>p</strong> is HTML and CSS tells him how to behave</p>
+          <p>
+            We humans are really lucky because we are all very similar. When we go to the movies, every chair more or less suits us. We're all pretty much the same size, same shape and everybody is pretty much one shade of brown. Except this one guy that I seen on youtube that is blue. But he is the exception that confirms the rule. HTML elements aren't so lucky. They come in so many different sizes, shapes, colors that we humans don't even come close, they go crazy with each one of this properties, so for them going to the movies is much much harder. One main difference in their theatre is that they can move their chairs. This allows CSS to move them around in every way it wants. There's one cool property that CSS can give to the elements, and is very important when HTML elements are being sited. It's their aura. Yes, I know! CSS has some serious power. By the way, he tends to call aura - a margin. I don't know why. It's not even half as cool as aura, but he's the boss. Margins of elements can't cross each other, so he has to put this into account when they are sited. Luckily he can adjust the margin, and they are sited the way he wants.
+          </p>
+          <p>
+            <iframe width="640" height="360" src="http://www.youtube.com/embed/LowTUTGOtE0" frameborder="0" allowfullscreen ></iframe>
+          </p>
+          <p>
+            One last thing about we need to mention, before we're done for today. When HTML elements go to the movies they usually wear T-shirts with something written on it. It's they themselves who decide what it's going to say. This is something that CSS with all it's powers can't affect. But CSS does have the power of controlling where on the T-shirt it's going to be written. To adjust the text on the page to his wish he uses something called padding. He says how much space needs to be added from the edge of the T-shirt on the top, right, bottom or left to the text on it, and it is so placed exactly to the pixel, or px for short. Obviously CSS also decides what color, font type/family the text is going to be, in addition to what color the shirt is. But remember, it's the HTML elements that decide what they'll say. At the end of the day, they do live in a free country.
+          </p>
+        <h5 class="yellow_header" style="float:right">...by Marko Anton Potocnik</h4>
+      </div>
     </div>
-  <div id="footer">
-    <table>
-      <tr><td colspan="3">by Marko Anton Potocnik</td></tr>
-      <tr><td>You can find me in...</td>
-          <td><a href="mailto:markoapotocnik@gmail.com"><img src="../imgs/mail-icon.png"></a></td>
-          <td><a href="https://www.facebook.com/markoapotocnik"><img src="../imgs/facebook.png"></a></td>
-          <td><a href="https://twitter.com/mapotocnik"><img src="../imgs/twitter.png"></a></td>
-          <td><a href="http://si.linkedin.com/in/markoapotocnik"><img src="../imgs/linkedin.png"></a></td>
-          <td><a href="https://github.com/AntonPot"><img style="background-color: white" src="../imgs/github.png"></a></td></tr>
-    </table>  
-  </div>
-</div>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
 </html>

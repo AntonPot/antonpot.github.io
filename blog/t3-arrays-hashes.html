@@ -1,84 +1,114 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-  <title>How Arrays Work</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-</head>
-<body>
-<div id="background">
-    <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
-  <table id="side_bar">
-    <tr><td class="button"><a href="../index.html">Home</a></td></tr>
-    <tr><td id="menu"><ol>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t1-git-blog.html">       Shell &amp; Friends</a></li>
-                <li><a href="./c1-chefs-kitchen.html">  School vs. Club</a></li>
+  <head>
+  	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  	<title>Arrays</title>
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/new_blog-stylesheet.css">
+      <link href="../css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <p class="navbar-text" >Marko Anton Potocnik</p>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../extra/about.html">About Me</a></li>
+            <li class="active" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Technical Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/t1-git-blog.html">Shell &amp; Friends</a></li>
+                <li class="dropdown-header">Week 2</li>          
+                <li><a href="../blog/t2-css-design.html">HTMS/CSS &amp; Cinema</a></li>
+                <li class="dropdown-header">Week 3</li>            
+                <li><a href="../blog/t3-arrays-hashes.html">How Arrays Work</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/t5-ruby-classes.html">Why Classes?</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/t6-oop-concepts.html">Inheritance, Composition, Mixins</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/t7-JavaScript.html">Loops in JS &amp; Ruby</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/t8-tech.html">Static vs. Dynamic typing</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Pairing projects</li>
+                <li><a href="../extra/javascript_prototypes.html">JavaScript Prototypes</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t2-css-design.html">     HTMS/CSS &amp; Cinema</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cultural Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/c1-chefs-kitchen.html">School vs. Club</a></li>
+                <li class="dropdown-header">Week 3</li>          
+                <li><a href="../blog/c3-thinking-style.html">Thinking styles</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/c4-tech-issues.html">Issues in Tech - Complexity</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/c5-feedback.html">Feedback</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/c6-stereotype-threat.html">Stereotype thread</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/c7-values.html">My Values</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/c8-conflict.html">Conflict</a></li>
+                <li class="dropdown-header">Week 9</li>          
+                <li><a href="../blog/c9-questions.html">Questions</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t3-arrays-hashes.html">  How Arrays Work</a></li>
-                <li><a href="./c3-thinking-style.html"> Thinking styles</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Me<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu"> 
+                <li><a href="mailto:markoapotocnik@gmail.com">Email</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://www.facebook.com/markoapotocnik">Facebook</a></li>
+                <li class="divider"></li>
+                <li><a href="https://twitter.com/mapotocnik">Twitter</a></li>
+                <li class="divider"></li>  
+                <li><a href="http://si.linkedin.com/in/markoapotocnik">LinkedIn</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://github.com/AntonPot">GitHub</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
-                <li><a href="./c4-tech-issues.html">    Issues in Tech - Complexity</a></li>
-              </ul>            
-            <li>Week</li>
-              <ul>
-                <li><a href="./t5-ruby-classes.html">   Why Classes?</li>
-                <li><a href="./c5-feedback.html">       Feedback</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t6-oop-concepts.html">   Inheritance, Composition, Mixins</a></li>
-                <li><a href="./c6-stereotype-threat.html">Stereotype thread</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t7-JavaScript.html">     Loops in JS &amp; Ruby</a></li>
-                <li><a href="./c7-values.html">         My Values</a></li>
-              </ul>      
-            <li>Week</li>
-              <ul>
-                <li><a href="./t8-tech.html">           Static vs. Dynamic typing</a></li>
-                <li><a href="./c8-conflict.html">       Conflict</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./c9-questions.html">      Questions</a></li>
-              </ul>                                    
-    </ol></td></tr>
-  </table>
-<div class="main">
-  <h2>How Arrays Work</h2>
-  <h2></h2>
-  <h3>January the 7th in year 2015</h3>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="index_background">
+      <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
+      <div id="my_text_area">
+        <h2 class="yellow_header">How Arrays Work</h2>
+        <h4 class="yellow_header">January the 7th in year 2015</h3>
     <p>
-      The fun times are over, Christmas presents are exchanged, and shopping centres made a lot of money. And what does this have to do with what I am about to write? Nothing, really. But you have to start your blog somehow, otherwise you just stare in a blank piece of paper – or screen in this case. 
+      The fun times are over, Christmas presents are exchanged, and shopping centres made a lot of money. And what does this have to do with what I am about to write? Nothing, really. But you have to start your blog somehow, otherwise you just stare in a blank piece of paper - or screen in this case. 
     </p>
     <p>
-      So what am I going to talk about today? It’s the first thing that I found challenging with programming. Arrays and Hashes. These two aren’t that much different, so I’ll just explain arrays first and then tell you what’s the difference with hashes. 
+      So what am I going to talk about today? It's the first thing that I found challenging with programming. Arrays and Hashes. These two aren't that much different, so I'll just explain arrays first and then tell you what's the difference with hashes. 
     </p>
     <p>
-      I’ve looked at Java and C# before I decided to go for Ruby and it was where I got introduced to arrays, and to be honest, it was a very confusing thing for me. I’ll tell you how I imagine them now. Let’s picture an array as a line of plastic cups. Each of this cups has some space inside. What we try to fill this cups with is so small, that they never get full, they just get heavy. The only rule is that they must stand in a line, and what we need to give them is a platform. They need a table to stand on. 
+      I've looked at Java and C# before I decided to go for Ruby and it was where I got introduced to arrays, and to be honest, it was a very confusing thing for me. I'll tell you how I imagine them now. Let's picture an array as a line of plastic cups. Each of this cups has some space inside. What we try to fill this cups with is so small, that they never get full, they just get heavy. The only rule is that they must stand in a line, and what we need to give them is a platform. They need a table to stand on. 
     </p>
     <figure>
       <img src="../imgs/array-with-cups.png">
       <figcaption>An array looks exactly like this, it's just that you can't see it.</figcaption>
     </figure>
     <p>
-      So let’s put this terms we established here into code. Cups can’t hover in mid-air so they need a table, which we create with command:
+      So let's put this terms we established here into code. Cups can't hover in mid-air so they need a table, which we create with command:
       <br><code class="code">Array.new</code>
-      <br>The catch is, that this isn’t enough. Program wants us to name this array of ours, so we need to create a variable that we can name whatever we want, like <code class='code'>line_of_cups</code> for example. So the code that computer would except would be:
+      <br>The catch is, that this isn't enough. Program wants us to name this array of ours, so we need to create a variable that we can name whatever we want, like <code class='code'>line_of_cups</code> for example. So the code that computer would except would be:
     </p>
       <pre class = 'prettyprint'> <code>line_of_cups = Array.new</code></pre>
     <p>  
@@ -90,10 +120,10 @@
     </p>
       <pre class = 'prettyprint'> <code>line_of_cups = []</code></pre>
     <p>
-      We could write either of them and we’d get our platform. 
+      We could write either of them and we'd get our platform. 
     </p>
     <p>
-       Until now we only put down a table for our cups. It’s time to add something to our array. The good thing is, that we don’t need to put cups on a table, the computer does this for us. We only need to tell him what we want to put in them, and we want to put in them a number <code class='code'>123</code> (an <strong>integer</strong> in programming terminology), and <code class='code'>"some words"</code> (a <strong>string</strong> in programming terminology). Strings always need to be in “quotes” so the computer knows how long it is.
+       Until now we only put down a table for our cups. It's time to add something to our array. The good thing is, that we don't need to put cups on a table, the computer does this for us. We only need to tell him what we want to put in them, and we want to put in them a number <code class='code'>123</code> (an <strong>integer</strong> in programming terminology), and <code class='code'>"some words"</code> (a <strong>string</strong> in programming terminology). Strings always need to be in "quotes" so the computer knows how long it is.
     </p>
     <p>
       Adding to array is pretty straight forward. We tell to the computer which array and what to add. In our case this would be
@@ -107,10 +137,10 @@
       This gives us an array with two objects
     </p>
     <p>
-      <b>=> [123, “some words”]</b>
+      <output class='my_output'>=> [123, "some words"]</output>
     </p>
     <p>
-      There is another way to push objects in our array. With this one we’ll add an integer <code class='code'>456</code>, a string <code class='code'>"more words"</code> and another array that already has a string in it. We’ll do that with a command:
+      There is another way to push objects in our array. With this one we'll add an integer <code class='code'>456</code>, a string <code class='code'>"more words"</code> and another array that already has a string in it. We'll do that with a command:
     </p>
     <p>
       <pre class = 'prettyprint'> <code>line_of_cups.push(456,"more words",["the new array"])</code></pre>
@@ -119,7 +149,7 @@
       If we were to test our array, it would now print
     </p>
     <p>
-      <b>=> [123, "some words", 456, "more words", ["the new array"]]</b>
+      <output class='my_output'>=> [123, "some words", 456, "more words", ["the new array"]]</output>
     </p>
     <p>
       Here we could add many more objects to it with this commands, and our array would never run out of table to put cups on, or cups themselves for that matter.
@@ -137,26 +167,26 @@
       Output:
     </p>
     <p>
-      <b>=> [123, "some words", 456, "more words", ["the new array"]]</b>
+      <output class='my_output'>=> [123, "some words", 456, "more words", ["the new array"]]</output>
     </p>
     <p>
-      Now we know how to create an array and how to add things to it, so it’s time to learn how to count the cups in our array. It’s similar, but a little bit different. If we count the fingers on our hand, it would be 1, 2, 3, 4 and 5, right? But the cups in the array start with 0 instead of 1, so they would count our fingers accordingly: 0, 1, 2, 3 and 4. Try to imagine that each of this cups has a number on it, and it so happens that the first one is 0. This numbers are called <strong>index</strong> and they are important when we want to point to any of our cups. I usually figure out the index of an object by counting normally and then subtract 1.
+      Now we know how to create an array and how to add things to it, so it's time to learn how to count the cups in our array. It's similar, but a little bit different. If we count the fingers on our hand, it would be 1, 2, 3, 4 and 5, right? But the cups in the array start with 0 instead of 1, so they would count our fingers accordingly: 0, 1, 2, 3 and 4. Try to imagine that each of this cups has a number on it, and it so happens that the first one is 0. This numbers are called <strong>index</strong> and they are important when we want to point to any of our cups. I usually figure out the index of an object by counting normally and then subtract 1.
     </p>
     <p>
-      Why is this important? Well, we need them indexes when we want to look into our cups. The computer needs to know which cup is holding an object we need, and if we know the index, it is really easy. We tell the computer <em>‘go to line_of_cups array and look into a cup with index 2’</em> with a command:
+      Why is this important? Well, we need them indexes when we want to look into our cups. The computer needs to know which cup is holding an object we need, and if we know the index, it is really easy. We tell the computer <em>'go to line_of_cups array and look into a cup with index 2'</em> with a command:
     </p>  
       <pre class="prettyprint"> <code>line_of_cups[2]</code></pre>
     <p>
       Computer would return
     </p>
     <p>
-      <b>=> 456</b>
+      <output class='my_output'>=> 456</output>
     </p>
     <p>
       Just like that! Simple.
     </p>
     <p>
-      Arrays are very useful when we need to store some objects. We have seen before that arrays can hold other arrays as well. This are then called 2 dimensional arrays. But what if we don’t want to access the object in arrays with index numbers. What if we want to access them with some words we can make up ourselves? This is then the part when we need to return to the beginning of the blog post and remember that I was saying something about <strong>hashes</strong>, and they are exactly what we need in this case.
+      Arrays are very useful when we need to store some objects. We have seen before that arrays can hold other arrays as well. This are then called 2 dimensional arrays. But what if we don't want to access the object in arrays with index numbers. What if we want to access them with some words we can make up ourselves? This is then the part when we need to return to the beginning of the blog post and remember that I was saying something about <strong>hashes</strong>, and they are exactly what we need in this case.
     </p>
     <p>
       They are very similar to arrays but they have <strong>keys</strong> to access the <strong>value</strong>. There, I just said it. Hashes are made out of <strong>key / value pairs</strong>. Just like arrays are best friends with square brackets - <code class="code">[]</code>, hashes are best friends with curly brackets - <code class="code">{}</code>. Just like arrays we need to give our hash a name when we create one, for example:
@@ -175,23 +205,15 @@
       Our hash would now return:
     </p>
     <p>
-      <b>=> {"name" => "Marko"}</b>
+      <output class='my_output'>=> {"name" => "Marko"}</output>
     </p>
     <p>
       There is plenty of good methods we can apply to each of them. Find some methods <a href="http://www.ruby-doc.org/core-2.2.0/Array.html" target="_blank">to call on arrays </a>, and some <a href="http://ruby-doc.org/core-2.2.0/Hash.html" target="_blank">to call on hashes </a>.
     </p>
-  </div>
-  <div id="footer">
-    <table>
-      <tr><td colspan="3">by Marko Anton Potocnik</td></tr>
-      <tr><td>You can find me in...</td>
-          <td><a href="mailto:markoapotocnik@gmail.com"><img src="../imgs/mail-icon.png"></a></td>
-          <td><a href="https://www.facebook.com/markoapotocnik"><img src="../imgs/facebook.png"></a></td>
-          <td><a href="https://twitter.com/mapotocnik"><img src="../imgs/twitter.png"></a></td>
-          <td><a href="http://si.linkedin.com/in/markoapotocnik"><img src="../imgs/linkedin.png"></a></td>
-          <td><a href="https://github.com/AntonPot"><img style="background-color: white" src="../imgs/github.png"></a></td></tr>
-    </table>  
-  </div>
-</div>
-</body>
+        <h5 class="yellow_header" style="float:right">...by Marko Anton Potocnik</h4>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
 </html>
