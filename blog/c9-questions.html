@@ -1,100 +1,124 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-  <title>Questions</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-</head>
-<body>
-<div id="background">
-    <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
-  <table id="side_bar">
-    <tr><td class="button"><a href="../index.html">Home</a></td></tr>
-    <tr><td id="menu"><ol>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t1-git-blog.html">       Shell &amp; Friends</a></li>
-                <li><a href="./c1-chefs-kitchen.html">  School vs. Club</a></li>
+  <head>
+  	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  	<title>Questions</title>
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/new_blog-stylesheet.css">
+      <link href="../css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <p class="navbar-text" >Marko Anton Potocnik</p>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../extra/about.html">About Me</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Technical Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/t1-git-blog.html">Shell &amp; Friends</a></li>
+                <li class="dropdown-header">Week 2</li>          
+                <li><a href="../blog/t2-css-design.html">HTMS/CSS &amp; Cinema</a></li>
+                <li class="dropdown-header">Week 3</li>            
+                <li><a href="../blog/t3-arrays-hashes.html">How Arrays Work</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/t5-ruby-classes.html">Why Classes?</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/t6-oop-concepts.html">Inheritance, Composition, Mixins</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/t7-JavaScript.html">Loops in JS &amp; Ruby</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/t8-tech.html">Static vs. Dynamic typing</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Pairing projects</li>
+                <li><a href="../extra/javascript_prototypes.html">JavaScript Prototypes</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t2-css-design.html">     HTMS/CSS &amp; Cinema</a></li>
+            </li>
+            <li class="active" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cultural Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/c1-chefs-kitchen.html">School vs. Club</a></li>
+                <li class="dropdown-header">Week 3</li>          
+                <li><a href="../blog/c3-thinking-style.html">Thinking styles</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/c4-tech-issues.html">Issues in Tech - Complexity</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/c5-feedback.html">Feedback</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/c6-stereotype-threat.html">Stereotype thread</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/c7-values.html">My Values</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/c8-conflict.html">Conflict</a></li>
+                <li class="dropdown-header">Week 9</li>          
+                <li><a href="../blog/c9-questions.html">Questions</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t3-arrays-hashes.html">  How Arrays Work</a></li>
-                <li><a href="./c3-thinking-style.html"> Thinking styles</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Me<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu"> 
+                <li><a href="mailto:markoapotocnik@gmail.com">Email</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://www.facebook.com/markoapotocnik">Facebook</a></li>
+                <li class="divider"></li>
+                <li><a href="https://twitter.com/mapotocnik">Twitter</a></li>
+                <li class="divider"></li>  
+                <li><a href="http://si.linkedin.com/in/markoapotocnik">LinkedIn</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://github.com/AntonPot">GitHub</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
-                <li><a href="./c4-tech-issues.html">    Issues in Tech - Complexity</a></li>
-              </ul>            
-            <li>Week</li>
-              <ul>
-                <li><a href="./t5-ruby-classes.html">   Why Classes?</li>
-                <li><a href="./c5-feedback.html">       Feedback</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t6-oop-concepts.html">   Inheritance, Composition, Mixins</a></li>
-                <li><a href="./c6-stereotype-threat.html">Stereotype thread</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t7-JavaScript.html">     Loops in JS &amp; Ruby</a></li>
-                <li><a href="./c7-values.html">         My Values</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t8-tech.html">           Static vs. Dynamic typing</a></li>
-                <li><a href="./c8-conflict.html">       Conflict</a></li>
-              </ul>            
-            <li>Week</li>
-              <ul>
-                <li><a href="./c9-questions.html">      Questions</a></li>
-              </ul>
-    </ol></td></tr>
-  </table>
-<div class="main">
-  <h2>Questions</h2>
-  <h2></h2>
-  <h3>February the 20th in year 2015</h3>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="index_background">
+      <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
+      <div id="my_text_area">
+        <h2 class="yellow_header">Questions</h2>
+        <h4 class="yellow_header">February the 20th in year 2015</h3>
     <p>
-      It’s all about how to ask the right questions. If you think about it, it’s not an easy task. Your question needs to have the right information in it, needs to be addressed to the right destination, and it needs to be valid. 
+      It's all about how to ask the right questions. If you think about it, it's not an easy task. Your question needs to have the right information in it, needs to be addressed to the right destination, and it needs to be valid. 
     </p>
     <p>
-      In coding we often face a situation where we don’t know what to do, and google is a perfect place to find an answer. It’s so easy nowadays when all the information imaginable is at the tips of your fingers. I try to imagine sometimes what it was like when google wasn’t around to provide answers for every single thing we wanted to know. Every time I feel blessed that I live in times when this things are available. 
+      In coding we often face a situation where we don't know what to do, and google is a perfect place to find an answer. It's so easy nowadays when all the information imaginable is at the tips of your fingers. I try to imagine sometimes what it was like when google wasn't around to provide answers for every single thing we wanted to know. Every time I feel blessed that I live in times when this things are available. 
     </p>
+    <p>
     <figrue>
       <img src="../imgs/questions.jpg">
     </figrue>    
-    <p>
-      Even though google knows everything there are still times when you can’t find exactly what you’re looking for, and you have to ask a question on the forum. Now you’re in a situation when you need to ask the question, not just look for an answer. There’s a big difference between these two. 
     </p>
     <p>
-      In coding community StackOverflow.com is the biggest place to find answers to all sorts of programming related questions and as well the place where questions can be asked, of course. Here it is extremely important, how the question is asked, because if it’s not done the right way, it’s not gonna get answered.
+      Even though google knows everything there are still times when you can't find exactly what you're looking for, and you have to ask a question on the forum. Now you're in a situation when you need to ask the question, not just look for an answer. There's a big difference between these two. 
     </p>
     <p>
-       When I find myself at a question mark, I and look for answers at uncle Google’s, I often find questions that are very poorly rated, and don’t have many answers. There are two main reasons for that. One is, that the question isn’t asked the right way, it isn’t sent to the right audience or have too few information in it. Second is, that the question has been answered too many times, and nobody even bothers any more.
+      In coding community StackOverflow.com is the biggest place to find answers to all sorts of programming related questions and as well the place where questions can be asked, of course. Here it is extremely important, how the question is asked, because if it's not done the right way, it's not gonna get answered.
     </p>
     <p>
-      I personally like to ask questions but only in person, not on the internet. I have to confess I have never asked a code related question on the forum. Actually, I don’t remember asking any kind of question on forums ever. I’d always try to research and find the answer to it, even though it would be much easier just to ask. I don’t know why this is so, but I think it has to do with some internal fear of mine, that I’ll ask a stupid question. And I know perfectly well, that there’s no such thing.<br>
-      Like Carl Sagan put it: "There are naive questions, tedious questions, ill-phrased questions, questions put after inadequate self-criticism. But every question is a cry to understand the world. There is no such thing as a dumb question.” 
+       When I find myself at a question mark, I and look for answers at uncle Google's, I often find questions that are very poorly rated, and don't have many answers. There are two main reasons for that. One is, that the question isn't asked the right way, it isn't sent to the right audience or have too few information in it. Second is, that the question has been answered too many times, and nobody even bothers any more.
     </p>
-  </div>
-  <div id="footer">
-    <table>
-      <tr><td colspan="3">by Marko Anton Potocnik</td></tr>
-      <tr><td>You can find me in...</td>
-          <td><a href="mailto:markoapotocnik@gmail.com"><img src="../imgs/mail-icon.png"></a></td>
-          <td><a href="https://www.facebook.com/markoapotocnik"><img src="../imgs/facebook.png"></a></td>
-          <td><a href="https://twitter.com/mapotocnik"><img src="../imgs/twitter.png"></a></td>
-          <td><a href="http://si.linkedin.com/in/markoapotocnik"><img src="../imgs/linkedin.png"></a></td>
-          <td><a href="https://github.com/AntonPot"><img style="background-color: white" src="../imgs/github.png"></a></td></tr>
-    </table>  
-  </div>
-</div>
-</body>
+    <p>
+      I personally like to ask questions but only in person, not on the internet. I have to confess I have never asked a code related question on the forum. Actually, I don't remember asking any kind of question on forums ever. I'd always try to research and find the answer to it, even though it would be much easier just to ask. I don't know why this is so, but I think it has to do with some internal fear of mine, that I'll ask a stupid question. And I know perfectly well, that there's no such thing.<br>
+      Like Carl Sagan put it: "There are naive questions, tedious questions, ill-phrased questions, questions put after inadequate self-criticism. But every question is a cry to understand the world. There is no such thing as a dumb question." 
+    </p>
+        <h5 class="yellow_header" style="float:right">...by Marko Anton Potocnik</h4>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
 </html>

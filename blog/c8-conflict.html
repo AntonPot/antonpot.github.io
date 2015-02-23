@@ -1,105 +1,133 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-  <title>Conflict</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-</head>
-<body>
-<div id="background">
-    <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
-  <table id="side_bar">
-    <tr><td class="button"><a href="../index.html">Home</a></td></tr>
-    <tr><td id="menu"><ol>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t1-git-blog.html">       Shell &amp; Friends</a></li>
-                <li><a href="./c1-chefs-kitchen.html">  School vs. Club</a></li>
+  <head>
+  	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  	<title>Conflict</title>
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/new_blog-stylesheet.css">
+      <link href="../css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <p class="navbar-text" >Marko Anton Potocnik</p>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../extra/about.html">About Me</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Technical Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/t1-git-blog.html">Shell &amp; Friends</a></li>
+                <li class="dropdown-header">Week 2</li>          
+                <li><a href="../blog/t2-css-design.html">HTMS/CSS &amp; Cinema</a></li>
+                <li class="dropdown-header">Week 3</li>            
+                <li><a href="../blog/t3-arrays-hashes.html">How Arrays Work</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/t5-ruby-classes.html">Why Classes?</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/t6-oop-concepts.html">Inheritance, Composition, Mixins</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/t7-JavaScript.html">Loops in JS &amp; Ruby</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/t8-tech.html">Static vs. Dynamic typing</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Pairing projects</li>
+                <li><a href="../extra/javascript_prototypes.html">JavaScript Prototypes</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t2-css-design.html">     HTMS/CSS &amp; Cinema</a></li>
+            </li>
+            <li class="active" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cultural Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/c1-chefs-kitchen.html">School vs. Club</a></li>
+                <li class="dropdown-header">Week 3</li>          
+                <li><a href="../blog/c3-thinking-style.html">Thinking styles</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/c4-tech-issues.html">Issues in Tech - Complexity</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/c5-feedback.html">Feedback</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/c6-stereotype-threat.html">Stereotype thread</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/c7-values.html">My Values</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/c8-conflict.html">Conflict</a></li>
+                <li class="dropdown-header">Week 9</li>          
+                <li><a href="../blog/c9-questions.html">Questions</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t3-arrays-hashes.html">  How Arrays Work</a></li>
-                <li><a href="./c3-thinking-style.html"> Thinking styles</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Me<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu"> 
+                <li><a href="mailto:markoapotocnik@gmail.com">Email</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://www.facebook.com/markoapotocnik">Facebook</a></li>
+                <li class="divider"></li>
+                <li><a href="https://twitter.com/mapotocnik">Twitter</a></li>
+                <li class="divider"></li>  
+                <li><a href="http://si.linkedin.com/in/markoapotocnik">LinkedIn</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://github.com/AntonPot">GitHub</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
-                <li><a href="./c4-tech-issues.html">    Issues in Tech - Complexity</a></li>
-              </ul>            
-            <li>Week</li>
-              <ul>
-                <li><a href="./t5-ruby-classes.html">   Why Classes?</li>
-                <li><a href="./c5-feedback.html">       Feedback</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t6-oop-concepts.html">   Inheritance, Composition, Mixins</a></li>
-                <li><a href="./c6-stereotype-threat.html">Stereotype thread</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t7-JavaScript.html">     Loops in JS &amp; Ruby</a></li>
-                <li><a href="./c7-values.html">         My Values</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t8-tech.html">           Static vs. Dynamic typing</a></li>
-                <li><a href="./c8-conflict.html">       Conflict</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./c9-questions.html">      Questions</a></li>
-              </ul>              
-    </ol></td></tr>
-  </table>
-<div class="main">
-  <h2>Conflict</h2>
-  <h2></h2>
-  <h3>February the 12th in year 2015</h3>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="index_background">
+      <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
+      <div id="my_text_area">
+        <h2 class="yellow_header">Conflict</h2>
+        <h4 class="yellow_header">February the 12th in year 2015</h3>
     <p>
-      This week I’ll talk about conflicts. Actually, a conflict. As it turned out, I had to think hard to remember one worth mentioning, but at the end I found it and I’ll share my story with you.
+      This week I'll talk about conflicts. Actually, a conflict. As it turned out, I had to think hard to remember one worth mentioning, but at the end I found it and I'll share my story with you.
     </p>
     <p>
-      Years ago, I had a group of friends, and we lived together in two apartments. We had great time, being neighbours, and a group who did everything together. I think back of those times, and I get emotional. Ah, the good old days. To get how this conflict came to be, you have to understand our situation at the time. We were a bunch of hippies who happen to struck gold, with this two modern apartment that couldn’t be rented because the bubble just popped. I still think I’ll never be able to live in such a place. It really was something. 
+      Years ago, I had a group of friends, and we lived together in two apartments. We had great time, being neighbours, and a group who did everything together. I think back of those times, and I get emotional. Ah, the good old days. To get how this conflict came to be, you have to understand our situation at the time. We were a bunch of hippies who happen to struck gold, with this two modern apartment that couldn't be rented because the bubble just popped. I still think I'll never be able to live in such a place. It really was something. 
     </p>
     <p>
-      But even though it was great, having all the space and all, we weren’t ready for it. The place was made for adults, not for us. So like every time, where this kind of irresponsible group gets together,  people stopped cleaning after one another. I do need to mention two more details. In our apartment  lived one girl and 3 guys, so she often went to visit the other apartment where there were more girls. And on the other hand I was the only one in the both apartments that wasn’t speaking Spanish, while all the others were Spain natives, so I was, in a way, an outsider.
+      But even though it was great, having all the space and all, we weren't ready for it. The place was made for adults, not for us. So like every time, where this kind of irresponsible group gets together, people stopped cleaning after one another. I do need to mention two more details. In our apartment  lived one girl and 3 guys, so she often went to visit the other apartment where there were more girls. And on the other hand I was the only one in the both apartments that wasn't speaking Spanish, while all the others were Spain natives, so I was, in a way, an outsider.
+    </p>
+    <p>
+    <figure>
+      <img src="../imgs/hippie_fight.jpg">
+    </figure>
     </p>
     <p>
       Months go by, dishes keep piling up, and so on, while nobody was really paying any attention to cleaning our apartment. After some time, I start to realise a girl from our neighbouring apartment, starts to accuse me of being the dirty one. Like I was the cause for the mess we were in. Very gently at first, but growing strong each week. After some time, she became really direct, and I started to get offended, until one day I had enough.
     </p>
     <p>
-      My reaction was simple. I decided to ignore the girl who accused me of not cleaning. This might sound easier than it was. She was a great friend of mine, and it’s so hard to cut bonds with someone you care deeply about. And remember, we were a group who did basically everything together. It became really awkward at times because I’d be really stubborn about it, and I know she was confused by my reaction. But here comes the catch. I knew why this girl was saying these things, and who poisoned her mind with it. I knew what the girl from my apartment was like. I knew what she was saying about me when I wasn’t present. So why wasn’t I acting this way towards her. Towards the girl who was saying all those things about me?
+      My reaction was simple. I decided to ignore the girl who accused me of not cleaning. This might sound easier than it was. She was a great friend of mine, and it's so hard to cut bonds with someone you care deeply about. And remember, we were a group who did basically everything together. It became really awkward at times because I'd be really stubborn about it, and I know she was confused by my reaction. But here comes the catch. I knew why this girl was saying these things, and who poisoned her mind with it. I knew what the girl from my apartment was like. I knew what she was saying about me when I wasn't present. So why wasn't I acting this way towards her. Towards the girl who was saying all those things about me?
     </p>
     <p>
-      You see, I didn’t care that much for her. I knew what she was like, and I expected it from her. She wasn’t as close to me as the one who accused me was. And this is where the conflict arose. I blamed this girl, not for accusing me, but for accusing me without even asking me about my side of the story. I blamed her, because we were close, closer than she was with the girl saying all the bad things about me. It was the disappointment that lead to the conflict.
+      You see, I didn't care that much for her. I knew what she was like, and I expected it from her. She wasn't as close to me as the one who accused me was. And this is where the conflict arose. I blamed this girl, not for accusing me, but for accusing me without even asking me about my side of the story. I blamed her, because we were close, closer than she was with the girl saying all the bad things about me. It was the disappointment that lead to the conflict.
     </p>
     <p>
-      When I look back a it now, I have to say that I should have brought it up much earlier than I did. I don’t think I had to go to the lengths I went, to express my discomfort with here blame. She is a smart woman, and she’d understand if I’d told her what was bothering me.
+      When I look back a it now, I have to say that I should have brought it up much earlier than I did. I don't think I had to go to the lengths I went, to express my discomfort with here blame. She is a smart woman, and she'd understand if I'd told her what was bothering me.
     </p>
     <p>
-      Before I wrap up, I owe you the ending of the story. Me and this girl, made up after some weeks of not talking. We were at the party, where all of us went, like most of the times. Alcohol made things easier, it loosened up my stubbornness and we started talking. We had a great honest discussion about our points of view, and we are still friends. I have to honestly say, that it is her who I keep in touch with most often, from all the group. As for the girl spreading the lies. Last time I’ve seen her, was when everybody was moving out of this awesome apartment. I moved out earlier, but I was there, and helped them when the rest of them did. And that was years ago.
+      Before I wrap up, I owe you the ending of the story. Me and this girl, made up after some weeks of not talking. We were at the party, where all of us went, like most of the times. Alcohol made things easier, it loosened up my stubbornness and we started talking. We had a great honest discussion about our points of view, and we are still friends. I have to honestly say, that it is her who I keep in touch with most often, from all the group. As for the girl spreading the lies. Last time I've seen her, was when everybody was moving out of this awesome apartment. I moved out earlier, but I was there, and helped them when the rest of them did. And that was years ago.
     </p>
     <p>
-      And the relationship between the girls. A few months after they changed the apartment, they got into a fight and as far as I know, they're still each on their own side. All I can say is, I’m happy we resolved the conflict, and that I can call her a friend.
+      And the relationship between the girls. A few months after they changed the apartment, they got into a fight and as far as I know, they're still each on their own side. All I can say is, I'm happy we resolved the conflict, and that I can call her a friend.
     </p>
-  </div>
-  <div id="footer">
-    <table>
-      <tr><td colspan="3">by Marko Anton Potocnik</td></tr>
-      <tr><td>You can find me in...</td>
-          <td><a href="mailto:markoapotocnik@gmail.com"><img src="../imgs/mail-icon.png"></a></td>
-          <td><a href="https://www.facebook.com/markoapotocnik"><img src="../imgs/facebook.png"></a></td>
-          <td><a href="https://twitter.com/mapotocnik"><img src="../imgs/twitter.png"></a></td>
-          <td><a href="http://si.linkedin.com/in/markoapotocnik"><img src="../imgs/linkedin.png"></a></td>
-          <td><a href="https://github.com/AntonPot"><img style="background-color: white" src="../imgs/github.png"></a></td></tr>
-    </table>  
-  </div>
-</div>
-</body>
+        <h5 class="yellow_header" style="float:right">...by Marko Anton Potocnik</h4>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
 </html>

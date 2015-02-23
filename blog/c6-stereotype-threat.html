@@ -1,97 +1,120 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-  <title>Stereotype threat</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-</head>
-<body>
-<div id="background">
-    <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
-  <table id="side_bar">
-    <tr><td class="button"><a href="../index.html">Home</a></td></tr>
-    <tr><td id="menu"><ol>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t1-git-blog.html">       Shell &amp; Friends</a></li>
-                <li><a href="./c1-chefs-kitchen.html">  School vs. Club</a></li>
+  <head>
+  	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  	<title>Stereotype threat</title>
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/new_blog-stylesheet.css">
+      <link href="../css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <p class="navbar-text" >Marko Anton Potocnik</p>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../extra/about.html">About Me</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Technical Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/t1-git-blog.html">Shell &amp; Friends</a></li>
+                <li class="dropdown-header">Week 2</li>          
+                <li><a href="../blog/t2-css-design.html">HTMS/CSS &amp; Cinema</a></li>
+                <li class="dropdown-header">Week 3</li>            
+                <li><a href="../blog/t3-arrays-hashes.html">How Arrays Work</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/t5-ruby-classes.html">Why Classes?</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/t6-oop-concepts.html">Inheritance, Composition, Mixins</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/t7-JavaScript.html">Loops in JS &amp; Ruby</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/t8-tech.html">Static vs. Dynamic typing</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Pairing projects</li>
+                <li><a href="../extra/javascript_prototypes.html">JavaScript Prototypes</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t2-css-design.html">     HTMS/CSS &amp; Cinema</a></li>
+            </li>
+            <li class="active" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cultural Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/c1-chefs-kitchen.html">School vs. Club</a></li>
+                <li class="dropdown-header">Week 3</li>          
+                <li><a href="../blog/c3-thinking-style.html">Thinking styles</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/c4-tech-issues.html">Issues in Tech - Complexity</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/c5-feedback.html">Feedback</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/c6-stereotype-threat.html">Stereotype thread</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/c7-values.html">My Values</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/c8-conflict.html">Conflict</a></li>
+                <li class="dropdown-header">Week 9</li>          
+                <li><a href="../blog/c9-questions.html">Questions</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t3-arrays-hashes.html">  How Arrays Work</a></li>
-                <li><a href="./c3-thinking-style.html"> Thinking styles</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Me<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu"> 
+                <li><a href="mailto:markoapotocnik@gmail.com">Email</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://www.facebook.com/markoapotocnik">Facebook</a></li>
+                <li class="divider"></li>
+                <li><a href="https://twitter.com/mapotocnik">Twitter</a></li>
+                <li class="divider"></li>  
+                <li><a href="http://si.linkedin.com/in/markoapotocnik">LinkedIn</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://github.com/AntonPot">GitHub</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
-                <li><a href="./c4-tech-issues.html">    Issues in Tech - Complexity</a></li>
-              </ul>            
-            <li>Week</li>
-              <ul>
-                <li><a href="./t5-ruby-classes.html">   Why Classes?</li>
-                <li><a href="./c5-feedback.html">       Feedback</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t6-oop-concepts.html">   Inheritance, Composition, Mixins</a></li>
-                <li><a href="./c6-stereotype-threat.html">Stereotype thread</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t7-JavaScript.html">     Loops in JS &amp; Ruby</a></li>
-                <li><a href="./c7-values.html">         My Values</a></li>
-              </ul>              
-            <li>Week</li>
-              <ul>
-                <li><a href="./t8-tech.html">           Static vs. Dynamic typing</a></li>
-                <li><a href="./c8-conflict.html">       Conflict</a></li>
-              </ul> 
-            <li>Week</li>
-              <ul>
-                <li><a href="./c9-questions.html">      Questions</a></li>
-              </ul>                           
-    </ol></td></tr>
-  </table>
-<div class="main">
-  <h2>Stereotype threat</h2>
-  <h2></h2>
-  <h3>February the 1st in year 2015</h3>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="index_background">
+      <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
+      <div id="my_text_area">
+        <h2 class="yellow_header">Stereotype threat</h2>
+        <h4 class="yellow_header">February the 1st in year 2015</h3>
     <p>
-      I’m to talk about stereotype threat today. Just to quickly sum up what it is all about. This is when you find yourself underperform in certain situations because the stereotype hanging over your head. This goes for stereotypes for different races, different sexes, different nationalities, age and so on. A foundation for a person to realise this stereotypes is to be aware of it’s own identity.
+      I'm to talk about stereotype threat today. Just to quickly sum up what it is all about. This is when you find yourself underperform in certain situations because the stereotype hanging over your head. This goes for stereotypes for different races, different sexes, different nationalities, age and so on. A foundation for a person to realise this stereotypes is to be aware of it's own identity.
     </p>
     <p>
-      I come from a very small country where minorities are rare, and racial diversity is almost nonexistent, so it’s hard to place myself in the skin of someone who grew up in a very racially rich enviroment, but I did have some cases where I was aware of my identity and I’ll try to capture them in this blog. All of them interestingly come from situations where my identity was in minority, as that’s when you really start to acknowledge it. 
+      I come from a very small country where minorities are rare, and racial diversity is almost nonexistent, so it's hard to place myself in the skin of someone who grew up in a very racially rich enviroment, but I did have some cases where I was aware of my identity and I'll try to capture them in this blog. All of them interestingly come from situations where my identity was in minority, as that's when you really start to acknowledge it. 
     </p>
     <p>
-      First one would be from my high school. Our system is a bit different, and therefore I’d be part of a class that stays together. Meaning, there’d be 30 of us taking all of the classes together, so we’d create a strong bond between all of us. Why is this important? Out of 30 students, there would only be 6 boys. In highschool that was a lot of fun, but what I find interesting is, that at that time, it didn’t mean a big thing. I didn’t really feel my identity. Why I’m mentioning this, it's because I believe that it would have been a different story if it would have been the other way around. I guess that by the fact, that when I was talking to girls that they were in high schools where most of the students were boys, they never failed to mention that. I’ve broad that up, because I find it interesting, that the realisation of my identity wasn’t as obvious here, when it was in two different situations I’m about to mention. 
+      First one would be from my high school. Our system is a bit different, and therefore I'd be part of a class that stays together. Meaning, there'd be 30 of us taking all of the classes together, so we'd create a strong bond between all of us. Why is this important? Out of 30 students, there would only be 6 boys. In highschool that was a lot of fun, but what I find interesting is, that at that time, it didn't mean a big thing. I didn't really feel my identity. Why I'm mentioning this, it's because I believe that it would have been a different story if it would have been the other way around. I guess that by the fact, that when I was talking to girls that they were in high schools where most of the students were boys, they never failed to mention that. I've broad that up, because I find it interesting, that the realisation of my identity wasn't as obvious here, when it was in two different situations I'm about to mention. 
     </p>
     <figure>
       <img src="../imgs/alone.jpg">
     </figure>
     <p>
-      I’ve lived in Dublin, Ireland for years, and after borders of europe had fallen, this country had huge migration from all sorts of east European countries, predominantly from Poland, Czech Republic, and Slovakia. Over time some people in Ireland would feel threatened by all this foreigners that are suddenly flooding their cities, and unpleasant comments would be often heard. Than I, being from Slovenia, and even not being a part of the big three, would be getting a sense of occasional hostility. This wasn’t a racial issue, but it was an nationality issue. I came there from somewhere else. That’s what it mattered.
+      I've lived in Dublin, Ireland for years, and after borders of europe had fallen, this country had huge migration from all sorts of east European countries, predominantly from Poland, Czech Republic, and Slovakia. Over time some people in Ireland would feel threatened by all this foreigners that are suddenly flooding their cities, and unpleasant comments would be often heard. Than I, being from Slovenia, and even not being a part of the big three, would be getting a sense of occasional hostility. This wasn't a racial issue, but it was an nationality issue. I came there from somewhere else. That's what it mattered.
     </p>
     <p>
       Another time I experienced this sense of identity was when I traveled to Ghana in Africa. Where 
-      in Dublin I could pass through unnoticed if I just kept my mouth shut, here I couldn’t do anything not to be unnoticed. There wouldn’t be any unpleasant experiences, but I could feel I was seen differently. It didn’t take me long to get used to the situation, but I’d always have this feeling that I stood out. I’d guess it was this experience where the feeling of my own identity would be the strongest. 
+      in Dublin I could pass through unnoticed if I just kept my mouth shut, here I couldn't do anything not to be unnoticed. There wouldn't be any unpleasant experiences, but I could feel I was seen differently. It didn't take me long to get used to the situation, but I'd always have this feeling that I stood out. I'd guess it was this experience where the feeling of my own identity would be the strongest. 
     </p>
-  </div>
-  <div id="footer">
-    <table>
-      <tr><td colspan="3">by Marko Anton Potocnik</td></tr>
-      <tr><td>You can find me in...</td>
-          <td><a href="mailto:markoapotocnik@gmail.com"><img src="../imgs/mail-icon.png"></a></td>
-          <td><a href="https://www.facebook.com/markoapotocnik"><img src="../imgs/facebook.png"></a></td>
-          <td><a href="https://twitter.com/mapotocnik"><img src="../imgs/twitter.png"></a></td>
-          <td><a href="http://si.linkedin.com/in/markoapotocnik"><img src="../imgs/linkedin.png"></a></td>
-          <td><a href="https://github.com/AntonPot"><img style="background-color: white" src="../imgs/github.png"></a></td></tr>
-    </table>  
-  </div>
-</div>
-</body>
+        <h5 class="yellow_header" style="float:right">...by Marko Anton Potocnik</h4>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
 </html>
