@@ -1,67 +1,97 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-  <title>Inheritance, Composition, Mixins</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-</head>
-<body>
-<div id="background">
-    <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
-  <table id="side_bar">
-    <tr><td class="button"><a href="../index.html">Home</a></td></tr>
-    <tr><td id="menu"><ol>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t1-git-blog.html">       Shell &amp; Friends</a></li>
-                <li><a href="./c1-chefs-kitchen.html">  School vs. Club</a></li>
+  <head>
+  	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  	<title>Inheritance, Composition, Mixins</title>
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/new_blog-stylesheet.css">
+      <link href="../css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <p class="navbar-text" >Marko Anton Potocnik</p>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../extra/about.html">About Me</a></li>
+            <li class="active" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Technical Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/t1-git-blog.html">Shell &amp; Friends</a></li>
+                <li class="dropdown-header">Week 2</li>          
+                <li><a href="../blog/t2-css-design.html">HTMS/CSS &amp; Cinema</a></li>
+                <li class="dropdown-header">Week 3</li>            
+                <li><a href="../blog/t3-arrays-hashes.html">How Arrays Work</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/t5-ruby-classes.html">Why Classes?</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/t6-oop-concepts.html">Inheritance, Composition, Mixins</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/t7-JavaScript.html">Loops in JS &amp; Ruby</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/t8-tech.html">Static vs. Dynamic typing</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Pairing projects</li>
+                <li><a href="../extra/javascript_prototypes.html">JavaScript Prototypes</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t2-css-design.html">     HTMS/CSS &amp; Cinema</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cultural Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/c1-chefs-kitchen.html">School vs. Club</a></li>
+                <li class="dropdown-header">Week 3</li>          
+                <li><a href="../blog/c3-thinking-style.html">Thinking styles</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/c4-tech-issues.html">Issues in Tech - Complexity</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/c5-feedback.html">Feedback</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/c6-stereotype-threat.html">Stereotype thread</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/c7-values.html">My Values</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/c8-conflict.html">Conflict</a></li>
+                <li class="dropdown-header">Week 9</li>          
+                <li><a href="../blog/c9-questions.html">Questions</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t3-arrays-hashes.html">  How Arrays Work</a></li>
-                <li><a href="./c3-thinking-style.html"> Thinking styles</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Me<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu"> 
+                <li><a href="mailto:markoapotocnik@gmail.com">Email</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://www.facebook.com/markoapotocnik">Facebook</a></li>
+                <li class="divider"></li>
+                <li><a href="https://twitter.com/mapotocnik">Twitter</a></li>
+                <li class="divider"></li>  
+                <li><a href="http://si.linkedin.com/in/markoapotocnik">LinkedIn</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://github.com/AntonPot">GitHub</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
-                <li><a href="./c4-tech-issues.html">    Issues in Tech - Complexity</a></li>
-              </ul>            
-            <li>Week</li>
-              <ul>
-                <li><a href="./t5-ruby-classes.html">   Why Classes?</li>
-                <li><a href="./c5-feedback.html">       Feedback</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t6-oop-concepts.html">   Inheritance, Composition, Mixins</a></li>
-                <li><a href="./c6-stereotype-threat.html">Stereotype thread</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t7-JavaScript.html">     Loops in JS &amp; Ruby</a></li>
-                <li><a href="./c7-values.html">         My Values</a></li>
-              </ul>               
-            <li>Week</li>
-              <ul>
-                <li><a href="./t8-tech.html">           Static vs. Dynamic typing</a></li>
-                <li><a href="./c8-conflict.html">       Conflict</a></li>
-              </ul>   
-            <li>Week</li>
-              <ul>
-                <li><a href="./c9-questions.html">      Questions</a></li>
-              </ul>                         
-    </ol></td></tr>
-  </table>
-<div class="main">
-  <h2>Inheritance, Composition, Mixins</h2>
-  <h2></h2>
-  <h3>January the 31st in year 2015</h3>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="index_background">
+      <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
+      <div id="my_text_area">
+        <h2 class="yellow_header">Inheritance, Composition, Mixins</h2>
+        <h4 class="yellow_header">January the 31st in year 2015</h3>
     <p>
       When we start our programming life, our code is very short, but sooner or later there comes a time when we realise it has become too long. This is the time when we need to make a decision how are we going to split our code in to smaller objects. And there are three ways of doing that:
     </p>
@@ -71,10 +101,10 @@
       With mixins<br>
     </p>
     <p>
-      <strong>Inheritance:</strong>
+      <strong class="yellow_header">Inheritance:</strong>
     </p>
     <p>
-      I’ll make an example about life. One common thing all living things have is that they reproduce. So we’ll make life our superclass. All living things inherit that property of life. So if we make a class Animal, we can have it inherit all the methods life has. All we need to do is tell the computer that Animal class is less than Life class (<code class="code">Animal < Life</code>) when we declare it.
+      I'll make an example about life. One common thing all living things have is that they reproduce. So we'll make life our superclass. All living things inherit that property of life. So if we make a class Animal, we can have it inherit all the methods life has. All we need to do is tell the computer that Animal class is less than Life class (<code class="code">Animal < Life</code>) when we declare it.
     </p>
       <pre class="prettyprint">
   <code>class Life
@@ -106,24 +136,24 @@
        And our output is:
     </p>
     <p>
-      <b>Let's make more of us</b><br>
-      <b>Let's use some carbon dioxide</b><br>
-      <b>Let's make more of us</b><br>
-      <b>Let's go somewhere</b><br>
+      <output class='my_output'> => Let's make more of us<br>
+      => Let's use some carbon dioxide<br>
+      => Let's make more of us<br>
+      => Let's go somewhere</output>
     </p>
     <p>
-      And so it works. It’s that simple.<br>
+      And so it works. It's that simple.<br>
       Downside of inheritance is that subclasses get all the methods from superclass, and so do all the subclasses of subclass and so on. This can cause massive headaches when applications are big.
     </p>
     <p>
       So what we can do is, we can get only method we need from a separate class and put it in our own.
     </p>
     <p>
-      <strong>Composition:</strong>
+      <strong class="yellow_header">Composition:</strong>
     </p>
     <p>
-      When we use composition we create an instance of another class  within our own class to get the method we want. In this case we can control what methods we get from other class, and we can get them from more than one, not like with inheritance where we can only pick one superclass and then we get everything with it, including the rubbish we don’t need.
-      So let’s see how it’s done.
+      When we use composition we create an instance of another class  within our own class to get the method we want. In this case we can control what methods we get from other class, and we can get them from more than one, not like with inheritance where we can only pick one superclass and then we get everything with it, including the rubbish we don't need.
+      So let's see how it's done.
     </p>
   <pre class="prettyprint">
   <code>class Life
@@ -160,23 +190,23 @@
   animal_object.mate
   animal_object.move</code></pre>
     <p>
-      <b>Let's make more of us</b><br>
-      <b>Let's use some carbon dioxide</b><br>
-      <b>Let's make more of us</b><br>
-      <b>Let's go somewhere</b><br>
+      <output class='my_output'>=> Let's make more of us<br>
+      => Let's use some carbon dioxide<br>
+      => Let's make more of us<br>
+      => Let's go somewhere</output>
     </p>
     <p>
-      And we get the same result. Notice that we created a new method in Animal class called ‘mate’, so this is what we are then calling, and it is than the <code class="code">mate</code> method that in turn calls the method <code class="code">reproduction</code>.
+      And we get the same result. Notice that we created a new method in Animal class called 'mate', so this is what we are then calling, and it is than the <code class="code">mate</code> method that in turn calls the method <code class="code">reproduction</code>.
       This is very useful if we only need a small piece of other class, like one method that we could use in ours.
     </p>
     <p>
       But if we want more than one method and we want to apply it to multiple classes we can use something called modules.
     </p>
     <p>
-      <strong>Mixins:</strong>
+      <strong class="yellow_header">Mixins:</strong>
     </p>
     <p>
-      Modules are just like classes but different. I’m not going to go deep into differences between the two, but what’s important for us to know now is that we can’t make an instance of a module. What we do with them is to include them in our classes, with the magic word, yes you guessed it <code class="code">include</code>. If we do that, then all of the methods in the module are available in the class. Like here in our example, reproduction is available in Plant class because we said <code class="code">include Life</code>.
+      Modules are just like classes but different. I'm not going to go deep into differences between the two, but what's important for us to know now is that we can't make an instance of a module. What we do with them is to include them in our classes, with the magic word, yes you guessed it <code class="code">include</code>. If we do that, then all of the methods in the module are available in the class. Like here in our example, reproduction is available in Plant class because we said <code class="code">include Life</code>.
     </p>
   <pre class="prettyprint">
   <code>module Life
@@ -207,29 +237,22 @@
   animal_object.reproduction
   animal_object.move</code></pre>
     <p>
-      <b>Let's make more of us</b><br>
-      <b>Let's use some carbon dioxide</b><br>
-      <b>Let's make more of us</b><br>
-      <b>Let's go somewhere</b><br>
+      <output class='my_output'>=> Let's make more of us<br>
+      => Let's use some carbon dioxide<br>
+      => Let's make more of us<br>
+      => Let's go somewhere</output>
     </p>
     <p>
-      If we were to add another method in module Life, like for example <code class="code">has_cells</code>, than all of the classes were we included Life, would have gained the method. Imagine you need to create a <code class="code">class Cat</code>. You could simply include the module in it and that would be it. The best thing about mixins is that you can include as many modules as you want, even though it’s not the best idea to have countless modules added, but anyway, you can do it. Compared to inheritance, where you’re limited to one class to inherit from, this gives you more options.
+      If we were to add another method in module Life, like for example <code class="code">has_cells</code>, than all of the classes were we included Life, would have gained the method. Imagine you need to create a <code class="code">class Cat</code>. You could simply include the module in it and that would be it. The best thing about mixins is that you can include as many modules as you want, even though it's not the best idea to have countless modules added, but anyway, you can do it. Compared to inheritance, where you're limited to one class to inherit from, this gives you more options.
     </p>
     <p>
       On the bottom line, mixins seem to be the way of choice in ruby world, and inheritance seems to be quite the opposite, but like everything else in the world, it all comes down to personal opinion. Use whatever suits you, but be aware of the what your choice gives and takes. 
     </p>
-  </div>
-  <div id="footer">
-    <table>
-      <tr><td colspan="3">by Marko Anton Potocnik</td></tr>
-      <tr><td>You can find me in...</td>
-          <td><a href="mailto:markoapotocnik@gmail.com"><img src="../imgs/mail-icon.png"></a></td>
-          <td><a href="https://www.facebook.com/markoapotocnik"><img src="../imgs/facebook.png"></a></td>
-          <td><a href="https://twitter.com/mapotocnik"><img src="../imgs/twitter.png"></a></td>
-          <td><a href="http://si.linkedin.com/in/markoapotocnik"><img src="../imgs/linkedin.png"></a></td>
-          <td><a href="https://github.com/AntonPot"><img style="background-color: white" src="../imgs/github.png"></a></td></tr>
-    </table>  
-  </div>
-</div>
-</body>
+          
+        <h5 class="yellow_header" style="float:right">...by Marko Anton Potocnik</h4>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
 </html>

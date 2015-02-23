@@ -1,72 +1,102 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-  <title>Why Classes?</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-</head>
-<body>
-<div id="background">
-    <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
-  <table id="side_bar">
-    <tr><td class="button"><a href="../index.html">Home</a></td></tr>
-    <tr><td id="menu"><ol>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t1-git-blog.html">       Shell &amp; Friends</a></li>
-                <li><a href="./c1-chefs-kitchen.html">  School vs. Club</a></li>
+  <head>
+  	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  	<title>Classes</title>
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/new_blog-stylesheet.css">
+      <link href="../css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <p class="navbar-text" >Marko Anton Potocnik</p>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../extra/about.html">About Me</a></li>
+            <li class="active" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Technical Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/t1-git-blog.html">Shell &amp; Friends</a></li>
+                <li class="dropdown-header">Week 2</li>          
+                <li><a href="../blog/t2-css-design.html">HTMS/CSS &amp; Cinema</a></li>
+                <li class="dropdown-header">Week 3</li>            
+                <li><a href="../blog/t3-arrays-hashes.html">How Arrays Work</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/t5-ruby-classes.html">Why Classes?</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/t6-oop-concepts.html">Inheritance, Composition, Mixins</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/t7-JavaScript.html">Loops in JS &amp; Ruby</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/t8-tech.html">Static vs. Dynamic typing</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Pairing projects</li>
+                <li><a href="../extra/javascript_prototypes.html">JavaScript Prototypes</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t2-css-design.html">     HTMS/CSS &amp; Cinema</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cultural Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/c1-chefs-kitchen.html">School vs. Club</a></li>
+                <li class="dropdown-header">Week 3</li>          
+                <li><a href="../blog/c3-thinking-style.html">Thinking styles</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/c4-tech-issues.html">Issues in Tech - Complexity</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/c5-feedback.html">Feedback</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/c6-stereotype-threat.html">Stereotype thread</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/c7-values.html">My Values</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/c8-conflict.html">Conflict</a></li>
+                <li class="dropdown-header">Week 9</li>          
+                <li><a href="../blog/c9-questions.html">Questions</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t3-arrays-hashes.html">  How Arrays Work</a></li>
-                <li><a href="./c3-thinking-style.html"> Thinking styles</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Me<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu"> 
+                <li><a href="mailto:markoapotocnik@gmail.com">Email</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://www.facebook.com/markoapotocnik">Facebook</a></li>
+                <li class="divider"></li>
+                <li><a href="https://twitter.com/mapotocnik">Twitter</a></li>
+                <li class="divider"></li>  
+                <li><a href="http://si.linkedin.com/in/markoapotocnik">LinkedIn</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://github.com/AntonPot">GitHub</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
-                <li><a href="./c4-tech-issues.html">    Issues in Tech - Complexity</a></li>
-              </ul>            
-            <li>Week</li>
-              <ul>
-                <li><a href="./t5-ruby-classes.html">   Why Classes?</li>
-                <li><a href="./c5-feedback.html">       Feedback</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t6-oop-concepts.html">   Inheritance, Composition, Mixins</a></li>
-                <li><a href="./c6-stereotype-threat.html">Stereotype thread</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t7-JavaScript.html">     Loops in JS &amp; Ruby</a></li>
-                <li><a href="./c7-values.html">         My Values</a></li>
-              </ul>              
-            <li>Week</li>
-              <ul>
-                <li><a href="./t8-tech.html">           Static vs. Dynamic typing</a></li>
-                <li><a href="./c8-conflict.html">       Conflict</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./c9-questions.html">      Questions</a></li>
-              </ul>                            
-    </ol></td></tr>
-  </table>
-<div class="main">
-  <h2>Why Classes?</h2>
-  <h2></h2>
-  <h3>January the 24th in year 2015</h3>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="index_background">
+      <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
+      <div id="my_text_area">
+        <h2 class="yellow_header">Why Classes?</h2>
+        <h4 class="yellow_header">January the 24th in year 2015</h3>
     <p>
       Classes. Why do we even need classes? 
     </p>
     <p>
-      Well, they can be really useful when writing your code, because you don’t need to rewrite it when dealing with similar objects. Let’s say for example, I need to create a few cars in my code. I’d go:
+      Well, they can be really useful when writing your code, because you don't need to rewrite it when dealing with similar objects. Let's say for example, I need to create a few cars in my code. I'd go:
     </p>   
   <pre class="prettyprint">
   <code>car_1_make = 'Audi'
@@ -75,7 +105,7 @@
   car_1_engine = true
   car_1_number_of_wheels = 4</code></pre>    
     <p>
-       And then I’d start with another:
+       And then I'd start with another:
     </p>
   <pre class="prettyprint">
   <code>car_2_make = 'VW'
@@ -93,35 +123,36 @@
   car_3_engine = true
   car_3_number_of_wheels = 4</code></pre>
     <p>
-      Then I’d have to type something that my program will actually do for each car individually. It makes a mess with of all the variables, and there’s so much repetition the head starts to hurt. So what we need is something that would keep this information for us.
+      Then I'd have to type something that my program will actually do for each car individually. It makes a mess with of all the variables, and there's so much repetition the head starts to hurt. So what we need is something that would keep this information for us.
     </p>
     <p>
-      Let’s look at a simple class:
+      Let's look at a simple class:
     </p>
     <p>
       <pre class="prettyprint">
   <code>class Car
     def initialize
-      puts 'Let’s see some mean machines'
+      puts "Let's see some mean machines"
     end
   end</code></pre>
     </p>
     <p>
       We added a method inside called <strong>initialize</strong> which means that whenever we make an instance of this class, it will be executed.
-      <br>So let’s do that:
+      <br>So let's do that:
     </p>
   <pre class="prettyprint">
   <code>obj = Car.new</code></pre>
     <p>
-      It’s that simple.
-      <br>Now we have an object <strong>obj</strong> which is an instance of Car class (meaning it plays by the rules written in class Car), and since we said <code class="code">puts "Let’s see some mean machines"</code> the output of the code will be:
+      It's that simple.
+      <br>Now we have an object <strong>obj</strong> which is an instance of Car class (meaning it plays by the rules written in class Car), and since we said <code class="code">puts "Let's see some mean machines"</code> the output of the code will be:
     </p>
     <p>
-      <b>=> Let’s see some mean machines</b>
+      <output class='my_output'>=> Let's see some mean machines</output>
+      <p></p>
     </p>
     <p>
       But this is not what we are after. We need to make some cars! If we look at our variables defined at the beginning, we see all of our cars have engine and 4 wheels. That means we could put this information in initialize method, because it will always be the same with all the cars.
-      <br>So let’s do that:
+      <br>So let's do that:
     </p>
   <pre class="prettyprint">
   <code>class Car
@@ -131,7 +162,7 @@
     end
   end</code></pre>
     <p>
-      Awesome! Now let’s try to test the code. Before we’ll do that, we should enter some <code class="code">puts</code> just for testing reasons, so we’ll see what’s going on.
+      Awesome! Now let's try to test the code. Before we'll do that, we should enter some <code class="code">puts</code> just for testing reasons, so we'll see what's going on.
     </p>
   <pre class="prettyprint">
   <code>class Car
@@ -150,18 +181,17 @@
     <p>
       And our output is:
     </p>
+      <output class='my_output'>=> Is engine in the car? => true<br>
+      => How many wheels does it have? => 4</output>
+      <p></p>
     <p>
-      <b>=> Is engine in the car? => true</b><br>
-      <b>=> How many wheels does it have? => 4</b>
+      Yeey!!! We're doing great!
     </p>
     <p>
-      Yeey!!! We’re doing great!
+      So we have a car that has an engine and 4 wheels, but what about the rest of the car? This is something that isn't the same with all the cars, so we have to be able to access it an change it. For that we'll need to add new methods in our class. One method that runs once, just when class initializes won't make it. We need more! One thing to mention is, that it is very common to name the methods in classes so they end with equal sign (=). Why is this good? We'll see a bit later, but let's just remember to do that when we make them.
     </p>
     <p>
-      So we have a car that has an engine and 4 wheels, but what about the rest of the car? This is something that isn’t the same with all the cars, so we have to be able to access it an change it. For that we’ll need to add new methods in our class. One method that runs once, just when class initializes won’t make it. We need more! One thing to mention is, that it is very common to name the methods in classes so they end with equal sign (=). Why is this good? We’ll see a bit later, but let’s just remember to do that when we make them.
-    </p>
-    <p>
-      First we’ll add the colour of the car, just to see how this goes first.
+      First we'll add the colour of the car, just to see how this goes first.
     </p>
   <pre class="prettyprint">
   <code>class Car
@@ -186,15 +216,14 @@
       And we get an error:
     </p>
     <p>
-      <b>=> test.rb:15: syntax error, unexpected end-of-input</b><br>
-      <b>obj.color=</b><br>
-      <b style = 'padding-left: 96px'>^</b>
+      <output class='my_output'>=> test.rb:15: syntax error, unexpected end-of-input<br>
+      obj.color=</output>
     </p>
     <p>
-      It’s saying we can’t end the line with '='.  
+      It's saying we can't end the line with '='.  
     </p>
     <p>
-      Ok let’s remove it:
+      Ok let's remove it:
     </p>
   <pre class="prettyprint">
   <code>class Car
@@ -216,12 +245,12 @@
       And the output is exactly what we want:
     </p>
     <p>
-      <b>=> Is engine in the car? => true</b><br>
-      <b>=> How many wheels does it have? => 4</b><br>
-      <b>=> What is the colour? => blue</b>
+      <output class='my_output'>=> Is engine in the car? => true<br>
+      => How many wheels does it have? => 4<br>
+      => What is the colour? => blue</output>
     </p>
     <p>
-      But we want to change the colour, not have it hardcoded like here. We need to put the colour in when we call the method. First we need to change our method in the class so it will take some arguments like ‘colour_argument’ and then we’ll assign the value when we’ll call it.   
+      But we want to change the colour, not have it hardcoded like here. We need to put the colour in when we call the method. First we need to change our method in the class so it will take some arguments like 'colour_argument' and then we'll assign the value when we'll call it.   
     </p>
   <pre class="prettyprint">
   <code>class Car
@@ -243,14 +272,14 @@
       Output:
     </p>
     <p>
-      <b>=> Is engine in the car? => true</b><br>
-      <b>=> How many wheels does it have? => 4</b><br>
-      <b>=> What is the colour? => blue</b>
+      <output class='my_output'>=> Is engine in the car? => true<br>
+      => How many wheels does it have? => 4<br>
+      => What is the colour? => blue</output>
     </p>
     <p>
       Great! We got the same output as before, but we defined the colour when calling the method.
       <br>Awesome!
-      <br>Now, let’s return to that error we were given. Why was it raised, if we were suppose to put ‘=’ at the end. OK, let’s try it again, now that we have one argument and let’s see what happens:
+      <br>Now, let's return to that error we were given. Why was it raised, if we were suppose to put '=' at the end. OK, let's try it again, now that we have one argument and let's see what happens:
     </p>
   <pre class="prettyprint">
   <code>class Car
@@ -272,16 +301,16 @@
       Output:
     </p>
     <p>
-      <b>=> Is engine in the car? => true</b><br>
-      <b>=> How many wheels does it have? => 4</b><br>
-      <b>=> What is the colour? => blue</b><br>
+      <output class='my_output'>=> Is engine in the car? => true<br>
+      => How many wheels does it have? => 4<br>
+      => What is the colour? => blue</output>
     </p>
     <p>
       Alright!!!
-      <br>Same output but look how much better and logical the call to the method looks like. It’s almost like assigning the value to the method, where we know it’s actually giving it some parameters, but it looks like so, and we love it!
+      <br>Same output but look how much better and logical the call to the method looks like. It's almost like assigning the value to the method, where we know it's actually giving it some parameters, but it looks like so, and we love it!
     </p>
     <p>
-      There’s something I don’t like about this class. It prints the attributes whenever I assign them. I want it to tell me when I want, and be quiet when I deal with the data. Let’s create a method where we’ll put all the <code class ="code">puts</code>.
+      There's something I don't like about this class. It prints the attributes whenever I assign them. I want it to tell me when I want, and be quiet when I deal with the data. Let's create a method where we'll put all the <code class ="code">puts</code>.
     </p>
   <pre class="prettyprint">
   <code>class Car
@@ -299,7 +328,7 @@
     end
   end</code></pre>
     <p>
-      We didn’t call it <code class ="code">display=</code> because it doesn’t take any arguments, so it has to be called just <code class ="code">display</code>. Now we need to add another method call to our <code class ="code">obj</code> because we got a new method. Here we go:
+      We didn't call it <code class ="code">display=</code> because it doesn't take any arguments, so it has to be called just <code class ="code">display</code>. Now we need to add another method call to our <code class ="code">obj</code> because we got a new method. Here we go:
     </p>
     <p>
   <pre class="prettyprint">
@@ -311,15 +340,15 @@
       Output:
     </p>
     <p>
-      <b>=> ./blogclass.rb:10:in `display': undefined local variable</b><br>
-      <b>or method `engine' for #&lt;Car:0x00000002c344a0> (NameError)</b><br>
-      <b>from ./blogclass.rb:18:in `&lt;main>'</b>
+      <output class='my_output'>=> ./blogclass.rb:10:in `display': undefined local variable<br>
+      or method `engine' for #&lt;Car:0x00000002c344a0> (NameError)<br>
+      from ./blogclass.rb:18:in `&lt;main>'</output>
     </p>
     <p>
-      Wait what?!?! Our engine variable doesn’t exist, but it worked just fine before. Hmm? 
+      Wait what?!?! Our engine variable doesn't exist, but it worked just fine before. Hmm? 
     </p>
     <p>
-      I guess this has to do something with the fact that it is a local variable, which means it is only recognisable within that particular method. What we need is a variable which would be much more famous and be known all over the class. As it turns out, ruby offers a great solution for that, and it has something to do with emails! Yes, that’s right! It’s the <strong>@</strong> character. If we put @ in front of all of our variables we call in <code class ="code">display</code> we would rename them from local variable to instance variable. Let’s do it:
+      I guess this has to do something with the fact that it is a local variable, which means it is only recognisable within that particular method. What we need is a variable which would be much more famous and be known all over the class. As it turns out, ruby offers a great solution for that, and it has something to do with emails! Yes, that's right! It's the <strong>@</strong> character. If we put @ in front of all of our variables we call in <code class ="code">display</code> we would rename them from local variable to instance variable. Let's do it:
     </p>
   <pre class="prettyprint">
   <code>class Car
@@ -344,15 +373,15 @@
       Output:
     </p>
     <p>
-      <b>=> Is engine in the car? => true</b><br>
-      <b>=> How many wheels does it have? => 4</b><br>
-      <b>=> What is the colour? => blue</b><br>
+      <output class='my_output'>=> Is engine in the car? => true<br>
+      => How many wheels does it have? => 4<br>
+      => What is the colour? => blue</output>
     </p>
     <p>
       YESSSSS!!! We rock!
     </p>
     <p>
-      Now let’s add all the rest of the features of the car, like make and model. We’ll need to create a method for each of them, just like we did for colour.
+      Now let's add all the rest of the features of the car, like make and model. We'll need to create a method for each of them, just like we did for colour.
     </p>
   <pre class="prettyprint">
   <code>class Car
@@ -382,7 +411,7 @@
   obj.model = 'A4'
   obj.display</code></pre>    
     <p>
-      Now we can finally give some value to the rest of our car, but the output would still be the same, so we need to create a method that would return the value we just added. It’s a very simple method.
+      Now we can finally give some value to the rest of our car, but the output would still be the same, so we need to create a method that would return the value we just added. It's a very simple method.
     </p>
 <pre class="prettyprint">
   <code>class Car
@@ -423,34 +452,34 @@
       Output:
     </p>
     <p>
-      <b>=> "Audi"</b><br>
-      <b>=> "A4"</b><br>
-      <b>=> Is engine in the car? => true</b><br>
-      <b>=> How many wheels does it have? => 4</b><br>
-      <b>=> What is the colour? => blue</b><br>
+      <output class='my_output'>=> "Audi"<br>
+      => "A4"<br>
+      => Is engine in the car? => true<br>
+      => How many wheels does it have? => 4<br>
+      => What is the colour? => blue</output>
     </p>
     <p>
-      Pay attention to the fact that we could easily name the new methods which return the value <code class ="code">make</code> because the other one, which gathers value is called <code class ="code">make=</code>. Look as well at the test code, at the bottom where we call it. We added the <code class ="code">p</code> so it prints the output. It’s easier like that then to change the code in the class. 
+      Pay attention to the fact that we could easily name the new methods which return the value <code class ="code">make</code> because the other one, which gathers value is called <code class ="code">make=</code>. Look as well at the test code, at the bottom where we call it. We added the <code class ="code">p</code> so it prints the output. It's easier like that then to change the code in the class. 
     </p>
     <p>
-      Everything goes so smoothly, I’m so excited!
+      Everything goes so smoothly, I'm so excited!
     </p>
     <p>
-      If we look at the code, we see that it has a lot of repetition, and if you repeat yourself, people will not want to talk to you, because they’ll be embarrassed to be seen in your company, so you better make sure your code is DRY (Don’t Repeat Yourself).
+      If we look at the code, we see that it has a lot of repetition, and if you repeat yourself, people will not want to talk to you, because they'll be embarrassed to be seen in your company, so you better make sure your code is DRY (Don't Repeat Yourself).
     </p>     
     <p>
-      So how to make this shorter? I’ll tell you a secret that everybody who codes in ruby knows, so you better pay attention!
+      So how to make this shorter? I'll tell you a secret that everybody who codes in ruby knows, so you better pay attention!
     </p>
     <p>
-      <strong>attr_reader</strong><br>
-      <strong>attr_writer</strong><br>
-      <strong>attr_accessor</strong>
+      <strong class="yellow_header">attr_reader</strong><br>
+      <strong class="yellow_header">attr_writer</strong><br>
+      <strong class="yellow_header">attr_accessor</strong>
     </p>
     <p>
-      These three can do some real magic. Let’s implement one at the time:
+      These three can do some real magic. Let's implement one at the time:
     </p>
     <p>
-      <strong>attr_reader</strong> replaces the the method that returns our value. This is the last method we implemented. Let’s replace the one for the <code class ="code">make</code>, with <code class ="code">attr_reader :make</code>.
+      <strong>attr_reader</strong> replaces the the method that returns our value. This is the last method we implemented. Let's replace the one for the <code class ="code">make</code>, with <code class ="code">attr_reader :make</code>.
     </p>
 <pre class="prettyprint">
   <code>class Car
@@ -489,18 +518,18 @@
       Output: 
     </p>
     <p>
-      <b>=> "Audi"</b><br>
-      <b>=> "A4"</b><br>
-      <b>=> Is engine in the car? => true</b><br>
-      <b>=> How many wheels does it have? => 4</b><br>
-      <b>=> What is the colour? => blue</b>
+      <output class='my_output'>=> "Audi"<br>
+      => "A4"<br>
+      => Is engine in the car? => true<br>
+      => How many wheels does it have? => 4<br>
+      => What is the colour? => blue</output>
     </p>
     <p>
-      See? It works! And it’s so much shorter to write. All you have to do is to add a symbol (it’s name starting with ‘:’) so the computer knows how to name it.
+      See? It works! And it's so much shorter to write. All you have to do is to add a symbol (it's name starting with ':') so the computer knows how to name it.
     </p>
     <p>
-      Let’s continue to the next one, <strong>attr_writer</strong>. Let’s do it to the colour. It’s the writer method that has been with us since the beginning, but now the time has come to update it to something more modern. Let’s change it to:
-      <br><code class ="code">attr_writer :color</code>.
+      Let's continue to the next one, <strong>attr_writer</strong>. Let's do it to the colour. It's the writer method that has been with us since the beginning, but now the time has come to update it to something more modern. Let's change it to:
+      <br><code class ="code">attr_writer :colour</code>.
     </p>
 <pre class="prettyprint">
   <code>class Car
@@ -537,14 +566,14 @@
       Output:
     </p>
     <p>
-      <b>=> "Audi"</b><br>
-      <b>=> "A4"</b><br>
-      <b>=> Is engine in the car? => true</b><br>
-      <b>=> How many wheels does it have? => 4</b><br>
-      <b>=> What is the colour? => blue</b>
+      <output class='my_output'>=> "Audi"<br>
+      => "A4"<br>
+      => Is engine in the car? => true<br>
+      => How many wheels does it have? => 4<br>
+      => What is the colour? => blue</output>
     </p>
     <p>
-    Ahh. It’s getting easier and easier to breath here. Let’s finish with the last one, <strong>attr_accessor</strong>. For the previous two the name is very clear, and so is for this one. It combines both of the previous shortcuts into one super cool one. This means it does both reads and writes in one simple line. Let’s do it to model, get rid of both methods, and use <code class="code">attr_accessor :model</code> instead.
+    Ahh. It's getting easier and easier to breath here. Let's finish with the last one, <strong>attr_accessor</strong>. For the previous two the name is very clear, and so is for this one. It combines both of the previous shortcuts into one super cool one. This means it does both reads and writes in one simple line. Let's do it to model, get rid of both methods, and use <code class="code">attr_accessor :model</code> instead.
     </p>
 <pre class="prettyprint">
   <code>class Car
@@ -576,17 +605,17 @@
       Output:
     </p>
     <p>
-      <b>=> "Audi"</b><br>
-      <b>=> "A4"</b><br>
-      <b>=> Is engine in the car? => true</b><br>
-      <b>=> How many wheels does it have? => 4</b><br>
-      <b>=> What is the colour? => blue</b>     
+      <output class='my_output'>=> "Audi"<br>
+      => "A4"<br>
+      => Is engine in the car? => true<br>
+      => How many wheels does it have? => 4<br>
+      => What is the colour? => blue</output>
     </p>
     <p>
-      And this is how it’s done! 
+      And this is how it's done! 
     </p>
     <p>
-      Let’s make our code even cooler. Let’s put <code class="code">make</code> in <code class="code">attr_accessor</code> and add make <code class="code">display</code> method do it’s job for everybody And finally, let's call the methods in a nicer manner. 
+      Let's make our code even cooler. Let's put <code class="code">make</code> in <code class="code">attr_accessor</code> and add make <code class="code">display</code> method do it's job for everybody And finally, let's call the methods in a nicer manner. 
     </p>
 <pre class="prettyprint">
   <code>class Car
@@ -627,42 +656,34 @@
       Output:
     </p> 
     <p>
-      <b>=> Is engine in the car? => true</b><br>
-      <b>=> How many wheels does it have? => 4</b><br>
-      <b>=> What is the colour? blue</b><br>
-      <b>=> Which brand is it? => Audi</b><br>
-      <b>=> And what model? => A4</b><br>
-      <b>=> </b><br>
-      <b>=> Is engine in the car? => true</b><br>
-      <b>=> How many wheels does it have? => 4</b><br>
-      <b>=> What is the colour? black</b><br>
-      <b>=> Which brand is it? => VW</b><br>
-      <b>=> And what model? => Passat</b><br>
-      <b>=> </b><br>
-      <b>=> Is engine in the car? => true</b><br>
-      <b>=> How many wheels does it have? => 4</b><br>
-      <b>=> What is the colour? red</b><br>
-      <b>=> Which brand is it? => Ford</b><br>
-      <b>=> And what model? => Mustang</b>
+      <output class='my_output'>=> Is engine in the car? => true<br>
+      => How many wheels does it have? => 4<br>
+      => What is the colour? blue<br>
+      => Which brand is it? => Audi<br>
+      => And what model? => A4<br>
+      => <br>
+      => Is engine in the car? => true<br>
+      => How many wheels does it have? => 4<br>
+      => What is the colour? black<br>
+      => Which brand is it? => VW<br>
+      => And what model? => Passat<br>
+      => <br>
+      => Is engine in the car? => true<br>
+      => How many wheels does it have? => 4<br>
+      => What is the colour? red<br>
+      => Which brand is it? => Ford<br>
+      => And what model? => Mustang</output>
     </p>
     <p>
       Now imagine you have this class in another file, and you just type the color, make and model, and it will print the whole car, just like that. Almost like magic.
     </p> 
     <p>
       So in case you still wondered, this is why we need classes.
-    </p>                  
-  </div>
-  <div id="footer">
-    <table>
-      <tr><td colspan="3">by Marko Anton Potocnik</td></tr>
-      <tr><td>You can find me in...</td>
-          <td><a href="mailto:markoapotocnik@gmail.com"><img src="../imgs/mail-icon.png"></a></td>
-          <td><a href="https://www.facebook.com/markoapotocnik"><img src="../imgs/facebook.png"></a></td>
-          <td><a href="https://twitter.com/mapotocnik"><img src="../imgs/twitter.png"></a></td>
-          <td><a href="http://si.linkedin.com/in/markoapotocnik"><img src="../imgs/linkedin.png"></a></td>
-          <td><a href="https://github.com/AntonPot"><img style="background-color: white" src="../imgs/github.png"></a></td></tr>
-    </table>  
-  </div>
-</div>
-</body>
+    </p>                 
+        <h5 class="yellow_header" style="float:right">...by Marko Anton Potocnik</h4>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
 </html>

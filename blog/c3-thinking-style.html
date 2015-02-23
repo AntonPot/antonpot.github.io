@@ -1,133 +1,158 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-  <title>Thinking styles</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-</head>
-<body>
-<div id="background">
-    <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
-  <table id="side_bar">
-    <tr><td class="button"><a href="../index.html">Home</a></td></tr>
-    <tr><td id="menu"><ol>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t1-git-blog.html">       Shell &amp; Friends</a></li>
-                <li><a href="./c1-chefs-kitchen.html">  School vs. Club</a></li>
+  <head>
+  	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  	<title>Thinking styles</title>
+  	<link rel="stylesheet" type="text/css" href="../stylesheets/new_blog-stylesheet.css">
+      <link href="../css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <p class="navbar-text" >Marko Anton Potocnik</p>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../extra/about.html">About Me</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Technical Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/t1-git-blog.html">Shell &amp; Friends</a></li>
+                <li class="dropdown-header">Week 2</li>          
+                <li><a href="../blog/t2-css-design.html">HTMS/CSS &amp; Cinema</a></li>
+                <li class="dropdown-header">Week 3</li>            
+                <li><a href="../blog/t3-arrays-hashes.html">How Arrays Work</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/t5-ruby-classes.html">Why Classes?</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/t6-oop-concepts.html">Inheritance, Composition, Mixins</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/t7-JavaScript.html">Loops in JS &amp; Ruby</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/t8-tech.html">Static vs. Dynamic typing</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Pairing projects</li>
+                <li><a href="../extra/javascript_prototypes.html">JavaScript Prototypes</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t2-css-design.html">     HTMS/CSS &amp; Cinema</a></li>
+            </li>
+            <li class="active" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cultural Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Week 1</li>          
+                <li><a href="../blog/c1-chefs-kitchen.html">School vs. Club</a></li>
+                <li class="dropdown-header">Week 3</li>          
+                <li><a href="../blog/c3-thinking-style.html">Thinking styles</a></li>
+                <li class="dropdown-header">Week 4</li>          
+                <li><a href="../blog/c4-tech-issues.html">Issues in Tech - Complexity</a></li>
+                <li class="dropdown-header">Week 5</li>          
+                <li><a href="../blog/c5-feedback.html">Feedback</a></li>
+                <li class="dropdown-header">Week 6</li>          
+                <li><a href="../blog/c6-stereotype-threat.html">Stereotype thread</a></li>
+                <li class="dropdown-header">Week 7</li>          
+                <li><a href="../blog/c7-values.html">My Values</a></li>
+                <li class="dropdown-header">Week 8</li>          
+                <li><a href="../blog/c8-conflict.html">Conflict</a></li>
+                <li class="dropdown-header">Week 9</li>          
+                <li><a href="../blog/c9-questions.html">Questions</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t3-arrays-hashes.html">  How Arrays Work</a></li>
-                <li><a href="./c3-thinking-style.html"> Thinking styles</a></li>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Me<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu"> 
+                <li><a href="mailto:markoapotocnik@gmail.com">Email</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://www.facebook.com/markoapotocnik">Facebook</a></li>
+                <li class="divider"></li>
+                <li><a href="https://twitter.com/mapotocnik">Twitter</a></li>
+                <li class="divider"></li>  
+                <li><a href="http://si.linkedin.com/in/markoapotocnik">LinkedIn</a></li>
+                <li class="divider"></li>  
+                <li><a href="https://github.com/AntonPot">GitHub</a></li>
               </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t4-enumerable-methods.html">Enumerable Methods - #cycle</a></li>
-                <li><a href="./c4-tech-issues.html">    Issues in Tech - Complexity</a></li>
-              </ul>            
-            <li>Week</li>
-              <ul>
-                <li><a href="./t5-ruby-classes.html">   Why Classes?</li>
-                <li><a href="./c5-feedback.html">       Feedback</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t6-oop-concepts.html">   Inheritance, Composition, Mixins</a></li>
-                <li><a href="./c6-stereotype-threat.html">Stereotype thread</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t7-JavaScript.html">     Loops in JS &amp; Ruby</a></li>
-                <li><a href="./c7-values.html">         My Values</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./t8-tech.html">           Static vs. Dynamic typing</a></li>
-                <li><a href="./c8-conflict.html">       Conflict</a></li>
-              </ul>
-            <li>Week</li>
-              <ul>
-                <li><a href="./c9-questions.html">      Questions</a></li>
-              </ul>                                          
-    </ol></td></tr>
-  </table>
-<div class="main">
-  <h2>Thinking styles</h2>
-  <h2></h2>
-  <h3>January the 8th in year 2015</h3>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="index_background">
+      <img id="header" src="../imgs/avatar.png" alt="Picture of myself">
+      <div id="my_text_area">
+        <h2 class="yellow_header">Thinking styles</h2>
+        <h4 class="yellow_header">January the 8th in year 2015</h3>
     <p>
-      Remember when you were in school and some kids did better than others. Some of them really struggled, might even had to repeat classes at the age of 8 or 9. Have you ever wondered why that is so? Well, there is no definitive answer, but let’s take a look anyway. 
+      Remember when you were in school and some kids did better than others. Some of them really struggled, might even had to repeat classes at the age of 8 or 9. Have you ever wondered why that is so? Well, there is no definitive answer, but let's take a look anyway. 
     </p>
     <p>
-      I think that one of the main reasons is, that everybody has his own wiring in his brain, but school systems are made only for some kind wires. From this we must accept the fact that there are many types of learning abilities. Some learn a lot from watching a video or seeing a PowerPoint presentation, with a lot of graphs and pictures. Others like to just listen what teacher has to say. Still, another would like to try things out themselves and learn from their mistakes. And at the end, some like to read, and they actually remember what they’ve read when they are finished. So which one is best?
+      I think that one of the main reasons is, that everybody has his own wiring in his brain, but school systems are made only for some kind wires. From this we must accept the fact that there are many types of learning abilities. Some learn a lot from watching a video or seeing a PowerPoint presentation, with a lot of graphs and pictures. Others like to just listen what teacher has to say. Still, another would like to try things out themselves and learn from their mistakes. And at the end, some like to read, and they actually remember what they've read when they are finished. So which one is best?
     </p>
     <figure>
       <img src="../imgs/visual-type.png">
       <figcaption>A visual fellow playing with an iPad</figcaption>
     </figure>
     <p>
-      First the <strong>visual type</strong>. I can’t really say how they do things in schools now, but when I went to one, there weren’t much visual in them. Once in a while one of the teachers would bring out some transparencies to use on overhead projector, and you were lucky if there were any pictures in them. Many classrooms had a TV in them, so one would think that at least we’ve seen some videos over the years. You’d be dead wrong. If we’ve seen them twice in one year we were lucky. I think we can conclude that the kids who had visual type of brains, weren’t really lucky.
+      First the <strong class="yellow_header">visual type</strong>. I can't really say how they do things in schools now, but when I went to one, there weren’t much visual in them. Once in a while one of the teachers would bring out some transparencies to use on overhead projector, and you were lucky if there were any pictures in them. Many classrooms had a TV in them, so one would think that at least we've seen some videos over the years. You'd be dead wrong. If we've seen them twice in one year we were lucky. I think we can conclude that the kids who had visual type of brains, weren't really lucky.
     </p>
     <p>
-      What about the <strong>aural type</strong>. Teachers talk, so that must suit that type of learners, right? Well, yes. Absolutely. Kids who learn best with listening, have great advantage compared to kids that are a visual type. But from this we see that the most important factor is the teacher. And if he has flaws, like not teaching the subject in its entirety, kids will miss on stuff they ought to know.
+      What about the <strong class="yellow_header">aural type</strong>. Teachers talk, so that must suit that type of learners, right? Well, yes. Absolutely. Kids who learn best with listening, have great advantage compared to kids that are a visual type. But from this we see that the most important factor is the teacher. And if he has flaws, like not teaching the subject in its entirety, kids will miss on stuff they ought to know.
     </p>
     <p>
-       The <strong>kinaestetic type</strong>. I believe that they got the worst one for the system. They might do great in some classes, where they actually <em>do</em> something, but in others, like history,… hmm, not so much. I mean, you can’t have them repeat the battle at Waterloo. Well you can, but you’ll run out of time, so you let the drama class take over this things. 
+       The <strong class="yellow_header">kinaestetic type</strong>. I believe that they got the worst one for the system. They might do great in some classes, where they actually <em>do</em> something, but in others, like history,... hmm, not so much. I mean, you can't have them repeat the battle at Waterloo. Well you can, but you'll run out of time, so you let the drama class take over this things. 
     </p>
+    <p>
     <figure>
       <img src="../imgs/kinaestetic-type.png">
     </figure>
-    <p>
-      And finally there are the <strong>read & write type</strong>. This are the kids who thrive in today’s school system. When I was a kid, this is how you’d get your knowledge. From books. It’s true that it doesn’t guarantee them success in maths or gym classes, but it gives them great advantage with the rest of them. 
     </p>
     <p>
-      So out of 4 types, only 2 are suitable for the system. So how do the rest of them get by, and even be successful? First, we need to realise that nobody is 100% kinaestetic type, or 100% aural. We’re all a mixture of all of them, but one is usually the dominant. But anyway, how do they keep up? Well, they need to have the right mindset.
+      And finally there are the <strong class="yellow_header">read &amp; write type</strong>. This are the kids who thrive in today's school system. When I was a kid, this is how you'd get your knowledge. From books. It's true that it doesn't guarantee them success in maths or gym classes, but it gives them great advantage with the rest of them. 
     </p>
     <p>
-      According to <a href="http://en.wikipedia.org/wiki/Carol_Dweck">Carol Dweck</a> we have 2 types of mindsets: <a href="http://www.brainpickings.org/index.php/2014/01/29/carol-dweck-mindset/">Fixed Mindset and Growth Mindset</a>. One of them is the good one, and the other one is not. But kids don’t choose their mindset, and this one, unlike types of brain wiring, is <strong>not</strong> up to God, but up to their parents. 
+      So out of 4 types, only 2 are suitable for the system. So how do the rest of them get by, and even be successful? First, we need to realise that nobody is 100% kinaestetic type, or 100% aural. We're all a mixture of all of them, but one is usually the dominant. But anyway, how do they keep up? Well, they need to have the right mindset.
     </p>
     <p>
-      I’ll explain the difference in very short terms. Fixed mindset will make you avoid tough challenges and subsequently hard work, while growth mindset, will do exactly the opposite, it will make you accept the challenges and work hard to get the reword at the end, which is self-fulfilment that a win brings. 
+      According to <a href="http://en.wikipedia.org/wiki/Carol_Dweck">Carol Dweck</a> we have 2 types of mindsets: <a href="http://www.brainpickings.org/index.php/2014/01/29/carol-dweck-mindset/">Fixed Mindset and Growth Mindset</a>. One of them is the good one, and the other one is not. But kids don't choose their mindset, and this one, unlike types of brain wiring, is <strong>not</strong> up to God, but up to their parents. 
+    </p>
+    <p>
+      I'll explain the difference in very short terms. Fixed mindset will make you avoid tough challenges and subsequently hard work, while growth mindset, will do exactly the opposite, it will make you accept the challenges and work hard to get the reword at the end, which is self-fulfilment that a win brings. 
     </p>
     <figure>
       <img src="../imgs/mindset-model.png">
       <figcaption>Carol Dweck's representation of the two mindsets</figcaption>
     </figure>
     <p>
-      Now, the kids who have one of less suitable thinking types and a fixed mindset would struggle at school, so it is important to have the growth mindset embedded in early stages so kids can overcome the disadvantage with hard work, and be successful at the end. Often it so happens that the most successful people weren’t starting from the pole position, but they had to grind through life to be who they are. Just look at any sport legend there is. Every one of them will tell you, they become who they are with hard work! And hard work comes with growth mindset.
+      Now, the kids who have one of less suitable thinking types and a fixed mindset would struggle at school, so it is important to have the growth mindset embedded in early stages so kids can overcome the disadvantage with hard work, and be successful at the end. Often it so happens that the most successful people weren't starting from the pole position, but they had to grind through life to be who they are. Just look at any sport legend there is. Every one of them will tell you, they become who they are with hard work! And hard work comes with growth mindset.
     </p>
     <p>
-      I have been introduced to this concept since I got into <a href="http://devbootcamp.com/"> Dev Bootcamp</a>, and I can say that it had dramatically changed my approach to work ethics. I’ve always been a mediocre student, I never really enjoyed going to school, with exception of few classes that I liked, and as a result I still grow this awful dislike of the whole school system. Probably my kinaestetic type of thinking didn’t really help, but when I look back, I see that whenever I really decided that I’ll teach myself something, and really understand it, I always succeeded. And it didn’t matter what subject it was or what type of brain wiring would be best suited for it. This is why it’s so important to program yourself to embrace Growth Mindset with both arms and legs, and stick to it.
+      I have been introduced to this concept since I got into <a href="http://devbootcamp.com/"> Dev Bootcamp</a>, and I can say that it had dramatically changed my approach to work ethics. I've always been a mediocre student, I never really enjoyed going to school, with exception of few classes that I liked, and as a result I still grow this awful dislike of the whole school system. Probably my kinaestetic type of thinking didn't really help, but when I look back, I see that whenever I really decided that I'll teach myself something, and really understand it, I always succeeded. And it didn't matter what subject it was or what type of brain wiring would be best suited for it. This is why it's so important to program yourself to embrace Growth Mindset with both arms and legs, and stick to it.
     </p>
     <p>
-      Before I finish I’d like to mention another theory which really helped me understand myself, and how I can squeeze the best out of me. It’s the <a href="http://web.cortland.edu/andersmd/learning/gregorc.htm">Theory of Mind Styles from Anthony F. Gregorc, Ph. D.</a>, with model of the following four mind styles: 
-      <br><strong>Concrete Sequential (CS)</strong>
-      <br><strong>Abstract Random (AR)</strong>
-      <br><strong>Abstract Sequential (AS)</strong>
-      <br><strong>Concrete Random (CR)</strong>
+      Before I finish I'd like to mention another theory which really helped me understand myself, and how I can squeeze the best out of me. It's the <a href="http://web.cortland.edu/andersmd/learning/gregorc.htm">Theory of Mind Styles from Anthony F. Gregorc, Ph. D.</a>, with model of the following four mind styles: 
+      <br><strong class="yellow_header">Concrete Sequential (CS)</strong>
+      <br><strong class="yellow_header">Abstract Random (AR)</strong>
+      <br><strong class="yellow_header">Abstract Sequential (AS)</strong>
+      <br><strong class="yellow_header">Concrete Random (CR)</strong>
       <br>With a <a href="http://www.thelearningweb.net/personalthink.html">simple test</a>, one can see what kind of style he belongs to, and once you understand your own personality, you can really find your true capability.
     </p>
     <p>
       I strongly believe, if schools would adopt these theories into the system, people like me would have much better time there, and their development would improve.
-    </p>
-  </div>
-  <div id="footer">
-    <table>
-      <tr><td colspan="3">by Marko Anton Potocnik</td></tr>
-      <tr><td>You can find me in...</td>
-          <td><a href="mailto:markoapotocnik@gmail.com"><img src="../imgs/mail-icon.png"></a></td>
-          <td><a href="https://www.facebook.com/markoapotocnik"><img src="../imgs/facebook.png"></a></td>
-          <td><a href="https://twitter.com/mapotocnik"><img src="../imgs/twitter.png"></a></td>
-          <td><a href="http://si.linkedin.com/in/markoapotocnik"><img src="../imgs/linkedin.png"></a></td>
-          <td><a href="https://github.com/AntonPot"><img style="background-color: white" src="../imgs/github.png"></a></td></tr>
-    </table>  
-  </div>
-  </div>
-</body>
+    </p>      
+        <h5 class="yellow_header" style="float:right">...by Marko Anton Potocnik</h4>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
 </html>

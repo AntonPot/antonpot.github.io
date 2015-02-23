@@ -4,7 +4,7 @@
 	margin-top: 60px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
+	width: 850px;
 	height: 885px;
 }
 #header {
@@ -16,14 +16,14 @@
     margin-top: 25px;
 }
 #center_image {
-    /* margin-left: 30px; */
+    margin-left: -80px;
 }
 #lcdb {
 	/* position: absolute; */
 	font-size: 40px;
 	text-align: center;
 	width: 230px;
-	margin-top: -180px;
+	margin-top: -200px;
 	/* margin-left: 438px; */	
 	margin-left: auto;
 	margin-right: auto;

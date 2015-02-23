@@ -4,7 +4,7 @@
 	margin-top: 60px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
+	width: 850px;
 	height: 885px;
 }
 #header {
@@ -17,7 +17,7 @@
 }
 #my_text_area {
     /* border: 2px solid white; */
-    width: 770px;
+    width: 620px;
     float: right;
     margin-top: 220px;
     color: white;

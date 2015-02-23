@@ -26,8 +26,13 @@
 	color: rgb(255, 251, 175);
 
 }
+figure {
+
+}
 figcaption {
     color: rgb(255, 251, 175); 
+    margin-top: 5px;
+    margin-bottom: 8px;
 }
 .my_output {
   padding: 10px 15px;
